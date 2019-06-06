@@ -1,5 +1,25 @@
 body {
   height: 100%;
   width: 100%;
-  background: firebrick;
+  background: darkolivegreen;
+}
+.blog{
+  width: 500px;
+}
+.main-container {
+  height: 100%;
+  width: 100%;
+  border: 1px solid red;
+  color: darkcyan;
+}
+.blogs-container {
+  height: 100%;
+  width: 50%;
+  color: darkgray;
+  border: 2px solid black;
+}
+.blog {
+  height: 100px;
+  width: 100%;
+  border: 5px dotted pink;
 }
