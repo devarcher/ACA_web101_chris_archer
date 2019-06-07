@@ -1,25 +1,35 @@
+h1 {
+  color: rgb(16, 63, 78);
+  width: 45%;
+  margin: 3% auto;
+}
 body {
-  height: 100%;
-  width: 100%;
-  background: darkolivegreen;
+  background-color: lightgrey;
 }
-.blog{
-  width: 500px;
+main {
+  width: 45%;
+  margin: 1% auto;
+  background-color: grey;
 }
-.main-container {
-  height: 100%;
-  width: 100%;
-  border: 1px solid red;
-  color: darkcyan;
+article {
+  width: 60%;
+  margin: 3px auto;
+  border: 2px solid rgb(16, 63, 78);
+  padding: 2px;
+  background-color: lightskyblue;
 }
-.blogs-container {
-  height: 100%;
-  width: 50%;
-  color: darkgray;
-  border: 2px solid black;
+article > h3 {
+  font-size:1.25em;
+  color: lightslategray;
 }
-.blog {
-  height: 100px;
-  width: 100%;
-  border: 5px dotted pink;
+footer {
+   border: 1px solid rgb(16, 63, 78);
+}
+article:hover {
+  background-color: whitesmoke;
+  filter: opacity(.8);
+  filter: drop-shadow(-.4em .4em .4em rgb(44, 44, 44));
+}
+article > h3:hover {
+  filter: brightness(1.5);
 }
