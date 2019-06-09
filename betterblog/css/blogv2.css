@@ -1,13 +1,21 @@
 body {
   background-color: #182526;
+  margin: 0;
 }
+
 header {
   height: 60px;
   background-color: #364959;
 }
+
 nav {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   float: right;
+  padding-top: 3px;
+}
+
+.h-h2 {
+  padding-top: 6px;
 }
 
 li {  
@@ -31,6 +39,7 @@ header h2 {
   padding: 0;
   color: #BABFBF;
 }
+
 .big-box {  
   width: 900px;
   margin: 1% auto;
@@ -39,6 +48,7 @@ header h2 {
   background-color: #364959;
   border-radius: 10px;
 }
+
 article {
   width: 60%;
   border: 1px solid darkgray;
@@ -53,8 +63,8 @@ article:hover {
 }
 
 .small-box { 
-  width: 400px;
-  height: 400px;
+  width: 404px;
+  height: 404px;
   border: 2px solid darkgrey;
   padding: 10px;
   margin: 0 10px;
