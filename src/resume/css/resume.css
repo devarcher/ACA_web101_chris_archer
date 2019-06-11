@@ -1,0 +1,22 @@
+body {
+  background-color: rgb(41, 41, 41);
+}
+
+/*Global*/
+.resume-container {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.left-master {
+  width: 32%;
+  float:left;
+  border-right: 3px solid red;
+  padding: 15px;
+}
+
+.right-master {
+  width: 63%;
+  float:right;
+  border: 1px solid green;
+  padding: 0;
+}
