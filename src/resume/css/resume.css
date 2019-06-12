@@ -103,9 +103,9 @@ body {
   letter-spacing: 2.5;
   border: 1px solid #9aca84;
 }
-  
+
 .box-l3 article {
-  margin: 5 20 0 20;
+  margin: 10 25 0 25;
 }
   
   /* Box-l4 */
@@ -117,24 +117,5 @@ body {
   border: 1px solid #9aca84;
 }
 
-.profile {
-  font-weight: 300;
-  margin: 0 30 5 30px;
-  padding: 2px;
-  letter-spacing: 2.5;
-  border: 1px solid #9aca84;
-}
-  
-.box-l3 article {
-  margin: 10 30 0 30;
-}
-  
-  /* Box-l4 */
-.skills {
-  font-weight: 300;
-  margin: 25 30 5 30px;
-  padding: 2px;
-  letter-spacing: 3.5;
-  border: 1px solid #9aca84;
-}
+
 
