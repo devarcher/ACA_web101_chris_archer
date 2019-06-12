@@ -18,7 +18,7 @@ nav {
   padding-top: 6px;
 }
 
-li {  
+a {  
   margin: 3px;
   padding:10px;
   border:2px solid black;
@@ -26,9 +26,11 @@ li {
   display: inline;
   background-color: darkgrey;
   border-radius: 10px;
+  text-decoration: none;
+  color: #182526;
 }
 
-li:hover {
+a:hover {
   color:lightgrey
 }
 
