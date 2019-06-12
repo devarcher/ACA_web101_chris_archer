@@ -1,15 +1,15 @@
 body {
   background-color:#182526;
 }
-
-/*Global*/
+  
+  /*Global*/
 #resume-container {
   font-family: 'Nunito', sans-serif;
   font-weight: 300;
   width: 55%;
   margin: 3% 0 0 23%;
 } 
-
+  
 
 .left-master {
   width: 30%;
@@ -18,89 +18,123 @@ body {
   background-color: #68778c;
   text-align: center;
 }
-
+  
 .right-master {
   width: 70%;
   float:right;
   min-height: 1400px;
   background-color: #364859;
 }
-
-
-/* Box-l1 */
+  
+  /* Box-l1 */
 .box-l1 {
   margin-top: 30px;
 }
-
+  
 .box-l1 img {
   border-radius:5%;
   border:1px solid black;
 }
-
+  
 .box-l1 h1 {
   margin: 30px auto 0 auto;
 }
-
+  
 .box-l1 p {
   padding: 25px;
   margin-top: -10px;
   margin-bottom: -25px;
 }
-
-
-
-/* Box-l2 */
+  
+  /* Box-l2 */
 .box-l2 {
-  text-align: left;
-  margin: 0 0 0 35px;
-}
-
-.box-l2 h1 {
-  font-weight: 300;
-  margin: 0 0 0 0;
-  letter-spacing: 20;
+  margin: 10 0 0 0px;
   text-align: center;
 }
-
+  
+.contact {
+  font-weight: 300;
+  margin: 20 30 5 30px;
+  padding: 2px;
+  letter-spacing: 1.5;
+  border: 1px solid #9aca84;
+}
+  
+.box-l2 .info {
+  line-height: 4;
+  text-align: center;
+  margin: -5 0 0 0;
+  letter-spacing: 42px;
+}
+  
 .phone {
   margin: 0 0 0 -4;
 }
-
+  
 .phone:hover {
   background-color:#c8d5c2; 
   filter:opacity(20) ;
 }
-
+  
 .email {
   margin: -5 3 -7 -5;
 }
-
+  
 .email:hover {
   background-color:#c8d5c2; 
   filter:opacity(20)
 }
-
+  
 .web:hover {
   background-color:#c8d5c2; 
   filter:opacity(20)
 }
-
+  
 .map:hover {
   background-color:#c8d5c2; 
   filter:opacity(20)
 }
-
-.info {
-  line-height: 4;
-  text-align: center;
-  margin: 0 0 -15 -27;
-  letter-spacing: 42px;
-}
-
-
-/* Box-l3 */
-.box-l3 h1 {
+  
+  /* Box-l3 */
+.profile {
   font-weight: 300;
-  text-align: left;
-  margin: 10 0 0 35;
+  margin: 0 30 5 30px;
+  padding: 2px;
+  letter-spacing: 2.5;
+  border: 1px solid #9aca84;
 }
+  
+.box-l3 article {
+  margin: 5 20 0 20;
+}
+  
+  /* Box-l4 */
+.skills {
+  font-weight: 300;
+  margin: 25 30 5 30px;
+  padding: 2px;
+  letter-spacing: 3.5;
+  border: 1px solid #9aca84;
+}
+
+.profile {
+  font-weight: 300;
+  margin: 0 30 5 30px;
+  padding: 2px;
+  letter-spacing: 2.5;
+  border: 1px solid #9aca84;
+}
+  
+.box-l3 p {
+  margin: 5 20 0 20;
+}
+  
+  /* Box-l4 */
+.skills {
+  font-weight: 300;
+  margin: 25 30 5 30px;
+  padding: 2px;
+  letter-spacing: 3.5;
+  border: 1px solid #9aca84;
+}
+
