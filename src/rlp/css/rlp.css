@@ -1,4 +1,8 @@
 /* Global */
+body {
+  background-color: #beb9b8;
+}
+
 .full-container {
   background-color: #3d3d3d;
   width: 100% auto;
@@ -50,13 +54,12 @@
 /*Bottom Box */
 .bottom {
   width: 100% auto;
-  height: 33% auto;
-  background-color: #969291;
+  height: 33%;
+  background-color: #beb9b8;
 }
 
 .b-left {
   width: 50% auto;
-  height: 33% auto;
   float:left;
 }
 
@@ -75,7 +78,7 @@
 .b-left ul li {
   font-size: 1.25em;
   text-align: left;
-  margin: 25 0 15 25;
+  margin: 25 0 0 25;
 } 
 
 .b-left ul li {
