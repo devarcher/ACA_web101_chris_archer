@@ -78,7 +78,7 @@ body {
 }
 
 .b-left h1 {
-  font-size: 1.5em;
+  font-size: 1.25em;
   color: #3d3d3d;
   text-align: left;
   margin: 25 0 0 25;
@@ -90,7 +90,7 @@ body {
 }
 
 .b-left ul li {
-  font-size: 1.25em;
+  font-size: 1.0em;
   text-align: left;
   margin: 25 0 0 25;
 } 
@@ -109,7 +109,7 @@ body {
 }
 
 .b-right h1 {
-  font-size: 1.5em;
+  font-size: 1.25em;
   color: #3d3d3d;
   text-align: left;
   margin: 20 0 0 40;
@@ -118,7 +118,7 @@ body {
 
 .b-right ul i {
   display: block;
-  font-size: 2em;
+  font-size: 1.75em;
   margin: 20 0 0 90;
 }
 
