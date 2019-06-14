@@ -22,7 +22,7 @@ body {
   position: relative;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, 5%)
+  transform: translate(-50%, 0%);
 }
 
 /* Middle Box */
@@ -36,7 +36,6 @@ body {
   text-align: center;
   margin: 15 0 15 0;
   color: #d1cbc4;
-  
 }
 
 .middle p {
@@ -110,28 +109,14 @@ body {
 }
 
 /* Mobile Size Rules */
-@media(min-width: 576px) {
-  .bottom {
-    display: none;
-  }
-}
-
-
 @media(max-width: 576px) {
   .t-right {
     display: none;
   }
 }
 
-/* Max Tablet Size */
-@media(max-width: 768px) {
-  
-  .t-right {
-    display:none;
-  }
-}
-
-@media(min-width: 768px) {
+/* Tablet Sizes */
+@media(min-width: 577px) {
   
   .bottom {
     display:none;
@@ -140,27 +125,21 @@ body {
   .t-right {
     display:none;
   }  
-  
 }
 
+/* Desktop Sizes */
 @media(min-width: 996px) {
-  .top {
-    width: 70%;
-    float: left;
+  .bottom {
+    display:none;
   }
 
-  .top img {
-  width: 70%;
-  margin: 0;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-54%, 0%)
+  .top image {
+    width: 70% auto;
+    float:left;
   }
 
   .top .t-right {
-    width: 30%;
+    width: 30% auto;
     float: right;
   }
-
 }
