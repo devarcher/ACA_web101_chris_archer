@@ -1,4 +1,3 @@
-
 /* Global */
 .full-container {
   background-color: #3d3d3d;
@@ -9,7 +8,8 @@
 
 /* Top Box */
 .top {
-  width: 100% auto;
+  width: 100%;
+  height: 33% auto;
 }
 
 .top img {
@@ -19,13 +19,13 @@
 /* Middle Box */
 .middle {
   width:100%;
-  height:100%;
+  height: 33% auto;
 }
 
 .middle h1 {
   font-size: 4em;
   text-align: center;
-  margin: 35 0 15 0;
+  margin: 15 0 15 0;
   color: #d1cbc4;
   
 }
@@ -50,20 +50,21 @@
 /*Bottom Box */
 .bottom {
   width: 100% auto;
-  height: 100%;
+  height: 33% auto;
   background-color: #969291;
 }
 
 .b-left {
   width: 50% auto;
+  height: 33% auto;
   float:left;
 }
 
 .b-left h1 {
-  font-size: 2em;
+  font-size: 1.5em;
   color: #3d3d3d;
   text-align: left;
-  margin: 25 0 0 45;
+  margin: 25 0 0 25;
   text-decoration: underline;
 }
 
@@ -72,9 +73,9 @@
 }
 
 .b-left ul li {
-  font-size: 1.5em;
+  font-size: 1.25em;
   text-align: left;
-  margin: 25 0 0 45;
+  margin: 25 0 15 25;
 } 
 
 .b-left ul li {
@@ -87,15 +88,15 @@
 }
 
 .b-right h1 {
-  font-size: 2em;
+  font-size: 1.5em;
   color: #3d3d3d;
   text-align: left;
-  margin: 25 0 0 45;
+  margin: 20 0 0 40;
   text-decoration: underline;
 }
 
 .b-right ul i {
   display: block;
-  font-size: 3em;
-  margin: 22 0 0 118;
+  font-size: 2em;
+  margin: 20 0 0 90;
 }
