@@ -24,13 +24,17 @@ img {
 }
 
 /* Header */
-.topbar {
+.top-nav {
   display: grid;
   grid-template-columns: 50% 50%;
 }
 
-.top-nav { 
-  display: grid;
+.top-nav img {  
+  grid-column: 1/2;
+}
+
+.top-nav h1 {
+  grid-column: 1/2;
 }
 
 .top-nav ul{
