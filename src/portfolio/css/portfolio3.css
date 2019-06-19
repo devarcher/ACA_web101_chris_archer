@@ -33,7 +33,7 @@ nav {
   margin: 0;
   background: var(--medium);
   display: grid;
-  grid-template-columns: auto 1fr 1fr auto;
+  grid-template-columns: auto 2fr 1fr;
 }
 
 nav img {
@@ -87,12 +87,12 @@ nav h1 {
   border: none;
 }
 
-.project1 {
+.port {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 3em;
   grid-row-gap: 3em;
-  margin: 50;
+  margin: 3%;
 }
 
 .project1 img {
@@ -118,17 +118,11 @@ nav h1 {
   max-width: 600px;
 }
 
-.project2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3em;
-}
-
 .project2 img {
   width: 450px;
+  height: 250px;
   max-width: 100%;
   object-fit: cover;
-  height: 250;
   align-self: center;
   justify-self: right;
 }
@@ -148,18 +142,11 @@ nav h1 {
   max-width: 600px;
 }
 
-.project3 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3em;
-  margin-top: 45;
-}
-
 .project3 img {
   width: 450px;
+  height: 250px;
   max-width: 100%;
   object-fit: cover;
-  height: 250;
   align-self: center;
   justify-self: right;
   filter: grayscale(40%);
@@ -190,13 +177,12 @@ nav h1 {
 }
 
 /* Media Queries */
-@media(max-width: 999px) {
+@media(max-width: 576px) {
   .burger-menu {
-    display: inline-block;
+    display: flex;
     font-size: 2em;
     align-self: center;
-    justify-self: end;
-    margin-right: 30;
+    justify-self: center;
   }
 
   .right-menu-desktop {
@@ -207,4 +193,82 @@ nav h1 {
     display: grid;
     grid-row: 2;
   }
+
+  .portfolio {
+    padding: .3em;
+  }
+
+  nav img {
+    max-width: 80%;
+    margin: 0;
+  }
+
+  nav h1 {
+    font-size: 1.95em;
+    margin: 0 10 7 0;
+  }
+
+  .port {
+    display: grid;
+    gap: 1em;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 1fr;
+    max-width: 450px;
+    margin-right: 20;
+  }
+
+  .project1 img {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .project1 h1 {
+    display: flex;
+    font-size: 1.25em;
+    margin: 0 0 110 0;
+  }
+
+  .project1 p {
+    grid-row: 2 / 3;
+    display: flex;
+    align-content: space-around;
+    font-size: .8em;
+  }
+
+  .project2 img {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .project2 h1 {
+    display: flex;
+    font-size: 1.25em;
+    margin: 0 0 130 0;
+  }
+
+  .project2 p {
+    grid-row: 2 / 3;
+    font-size: .8em;
+    align-content: center;
+  }
+
+  .project3 img {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .project3 h1 {
+    display: flex;
+    font-size: 1.25em;
+    margin: 0 0 125 0;
+  }
+
+  .project3 p {
+    grid-row: 2 / 3;
+    font-size: .8em;
+    align-self: flex-end;
+  }
+
+
+
 }
