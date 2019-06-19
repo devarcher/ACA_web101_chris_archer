@@ -74,7 +74,7 @@ nav h1 {
 
 /* Projects */
 .port {
-  opacity: 0.85;
+  opacity: 0.75;
   text-decoration: none;
   color: var(--sec);
 }
@@ -260,7 +260,7 @@ nav h1 {
   .project3 h1 {
     display: flex;
     font-size: 1.25em;
-    margin: 0 0 125 0;
+    margin: 0 0 100 0;
   }
 
   .project3 p {
@@ -268,7 +268,103 @@ nav h1 {
     font-size: .8em;
     align-self: flex-end;
   }
+}
 
+@media all and (max-width:980px) and (min-width: 577px) {
+  .burger-menu {
+    display: flex;
+    font-size: 2em;
+    align-self: center;
+    justify-self: center;
+  }
 
+  .right-menu-desktop {
+    display: none;
+  }
+
+  #nav-toggle:checked ~ .right-menu-mobile {
+    display: grid;
+    grid-row: 2;
+  }
+
+  .portfolio {
+    padding: .3em;
+  }
+
+  nav img {
+    max-width: 80%;
+    margin: 0;
+  }
+
+  nav h1 {
+    font-size: 1.95em;
+    margin: 0 10 7 0;
+  }
+
+  .port {
+    display: grid;
+    gap: 1em;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: auto;
+    max-width: 980px;
+    margin-right: 20;
+  }
+
+  .project1 img {
+    width: auto;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .project1 h1 {
+    display: flex;
+    font-size: 1.25em;
+    margin: 0 0 75 0;
+  }
+
+  .project1 p {
+    grid-row: 2 / 3;
+    display: flex;
+    align-content: space-around;
+    font-size: .8em;
+  }
+
+  .project2 img {
+    width: auto;
+    height: auto;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .project2 h1 {
+    display: flex;
+    font-size: 1.25em;
+    margin: 0 0 100 0;
+  }
+
+  .project2 p {
+    grid-row: 2 / 3;
+    font-size: .8em;
+    align-content: center;
+  }
+
+  .project3 img {
+    width: auto;
+    height: auto;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .project3 h1 {
+    display: flex;
+    font-size: 1.25em;
+    margin: 0 0 80 0;
+  }
+
+  .project3 p {
+    grid-row: 2 / 3;
+    font-size: .8em;
+    align-self: flex-end;
+  }
 
 }
