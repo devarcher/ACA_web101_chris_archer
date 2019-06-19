@@ -45,7 +45,7 @@ nav h1 {
   align-self: center;
   margin: 0 0 12 0;
   font-size: 3.5em;
-  font-weight: 200;
+  font-weight: 100;
 }
 
 #nav-toggle, .burger-menu {
@@ -67,12 +67,26 @@ nav h1 {
 .portfolio {
   text-align: center;
   margin-top: 25;
-  padding: 1em 3em;
+  padding: .8em 3em;
   background: var(--primary);
   border: 1px solid darkgrey;
 }
 
 /* Projects */
+.port {
+  opacity: 0.85;
+  text-decoration: none;
+  color: var(--sec);
+}
+
+.port:hover {
+  opacity: 1;
+}
+
+.port:visited {
+  border: none;
+}
+
 .project1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -81,12 +95,12 @@ nav h1 {
   margin: 50;
 }
 
-.project1 img{
+.project1 img {
   width: 450px;
   max-width: 100%;
   align-self: center;
   justify-self: right;
-  filter: grayscale(40%);
+  border: 1px solid black;
 }
 
 .project1 h1 {
@@ -101,6 +115,7 @@ nav h1 {
   grid-row: 1 / 2;
   display: flex;
   align-self: center;
+  max-width: 600px;
 }
 
 .project2 {
@@ -130,6 +145,7 @@ nav h1 {
   grid-row: 1 / 2;
   display: flex;
   align-self: center;
+  max-width: 600px;
 }
 
 .project3 {
@@ -146,7 +162,7 @@ nav h1 {
   height: 250;
   align-self: center;
   justify-self: right;
-  border: 1px solid black;
+  filter: grayscale(40%);
 }
 
 .project3 h1 {
@@ -161,6 +177,16 @@ nav h1 {
   grid-row: 1 / 2;
   display: flex;
   align-self: center;
+  max-width: 600px;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 25;
+  padding: .2em 3em;
+  background: var(--primary);
+  border: 1px solid darkgrey;
+  margin-top: 50;
 }
 
 /* Media Queries */
