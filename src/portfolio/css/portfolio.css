@@ -7,15 +7,10 @@
   --dark: rgb(27, 27, 27);
 } 
 
-.wrapper {
-  width: 100%;
-  height: 100%;
-}
-
 body{
   font-family: 'Quicksand', sans-serif;
   line-height: 1.4rem;
-  background: var(--medium);
+  background: var(--light);
   color: var(--dark);
 }
 
@@ -23,62 +18,35 @@ img {
   max-width: 100%;
 }
 
-/* Header */
-.topbar {
+.btn {
+  background-color: var(--primary);
+  color: var(--light);
+  padding: .8rem 1.4rem;
+  text-decoration: none;
+  border: 0;
+  margin-left: .8rem;
+  margin-top: .2rem;
+}
+
+.header {
+  width: 1760px;
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: auto 1fr 1fr;
 }
 
-.top-nav { 
-  display: grid;
+.header img {
+  max-width: 100%;
+  align-self: center;
 }
 
-.top-nav ul{
-  grid-column: 2 / 3;
+.header h1 {
+  margin-left: 1;
+  font-size: 4em;
+  font-weight: 75;
 }
 
-.port-1a {
-  grid-area: port-1a;
+.header a {
+  align-self: center;
+  align-content: flex-end;
 }
-
-.port-1b {
-  grid-area: port-1b;
-}
-
-.port-2a {
-  grid-area: port-2a;
-}
-
-.port-2b {
-  grid-area: port-2b;
-}
-
-.port-3a {
-  grid-area: port-3a;
-}
-
-.port-3b {
-  grid-area: port-3b;
-}
-
-.footer {
-  grid-area: footer;
-}
-
-.port-container {
-  display: grid;
-  gap:20px;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-areas:
-        'port-1a port-1b'
-        'port-2a port-2b'
-        'port-3a port-3b'
-        'footer footer';
-}
-
-
-
-
-  
-
 
