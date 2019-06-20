@@ -44,7 +44,7 @@ img {
   grid-template-columns: repeat(4, 1fr); 
 }
 
-.main-nav a {
+.top-nav a {
   background: var(--primary);
   display: block;
   text-decoration: none;
