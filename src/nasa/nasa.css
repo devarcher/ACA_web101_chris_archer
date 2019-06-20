@@ -23,7 +23,7 @@ body {
 .info {
   display: flex;
   justify-content: space-evenly;
-  background-color: rgb(158, 50, 50);
+  background-color: rgb(145, 20, 20);
   padding-bottom: 20px;
 }
 
@@ -50,4 +50,29 @@ body {
 .contact h3 {
   font-size: 1.25em;
   font-weight: 800;
+}
+
+.contact form {
+  padding: 8px;
+}
+
+
+@media (max-width: 776px) {
+  .info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .social {
+    padding: 20px;
+  }
+
+  .office {
+    padding: 20px;
+  }
+
+  .contact {
+    padding: 20px;
+  }
 }
