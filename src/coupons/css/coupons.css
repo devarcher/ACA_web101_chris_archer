@@ -1,15 +1,14 @@
 body {
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
+  width: 1200px;
 }
 
 .wrapper {
-  max-width: 90vw;
-  max-height: 90vh;
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr 1.5fr 1.5 1fr;
-  gap: 20px;
+  gap: 10px;
   padding: 20px;
 }
 
@@ -24,21 +23,27 @@ img {
 
 .one {
   grid-column: 1 / 2;
+  height: 100%;
+  width: 100%;
   display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .one i {
-  font-size: 5em;
-  align-self: center;
-  justify-self: left;
+  font-size: 65px;
 }
 
 .one h1 {
-  font-size: 7em;
+  display: flex;
+  font-size: 65px;
   font-weight: 800;
-  letter-spacing: .03em;
+  letter-spacing: .02em;
+  flex-grow: 2;
+}
+
+.one p {
+  font-size: 16px;
 }
 
 .two {
@@ -56,14 +61,22 @@ img {
 
 .three {
   grid-column: 1 / 2;
+  background: url(../img/fruit.png) no-repeat;
+  background-size: 150px;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .four {
   grid-column: 2 / 3;
+  background-color: lightblue;
 }
 
 .five {
   grid-column: 3 / 4;
+  background: url(../img/chips);
+  background: 25%;
 }
 
 .area3 {

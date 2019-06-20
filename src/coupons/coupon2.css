@@ -1,0 +1,165 @@
+ /* Global Settings */
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+ } 
+
+.main-container {
+   width: 100vw; 
+   height: 100vh;
+   padding: 20px;
+ }
+
+ .wrapper {
+   display: grid;
+   grid-template-columns: 768px 192px;
+   grid-template-rows: 192px 288px 288px 192px;
+ }
+
+
+ /* Area One */
+.area1 {
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+  border: 1px solid red;
+  display: grid;
+  grid-template-columns: 10% 90%;
+  grid-template-rows: 80% 20%;
+}
+
+.cookie {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  border: 1px solid red;
+}
+
+.techfood {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  border: 1px solid red;
+}
+
+.offer {
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+  border: 1px solid red;
+}
+
+
+/* Area Two */
+.area2 {
+  height: 100%;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3; 
+  border: 1px solid red;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr;
+}
+
+.fruit {
+grid-column: 1 / 2;
+border: 1px solid blue;
+}
+
+.health {
+grid-column: 2 / 3;
+border: 1px solid green
+}
+
+.chips {
+grid-column: 3 / 4;
+border: 1px solid grey;
+}
+
+/* Area Three */
+.area3 {
+  grid-column: 2 / 3;
+  grid-row: 2 / 4;
+  border: 1px solid red;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.wine {
+  grid-row: 1 / 2;
+  border: 1px solid blue;
+}
+
+.icecream {
+  grid-row: 2 / 3;
+  border: 1px solid green;
+}
+
+.ramen {
+  grid-row: 3 / 4;
+  border: 1px solid grey;
+}
+
+
+/* Area Four */
+.area4 {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  border: 1px solid red;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.tea {
+  grid-column: 1 / 2;
+  border: 1px solid blue;
+}
+
+.nuts {
+  grid-column: 2 / 3;
+  border: 1px solid green;
+}
+
+.yogurt {
+  grid-column: 3 / 4;
+  border: 1px solid grey;
+}
+
+.choc{
+  grid-column: 4 / 5;
+  border: 1px solid yellow  ;
+}
+
+/* Area Five */
+.area5 {
+  grid-column: 1 / 3;
+  grid-row: 4 / 5;
+  border: 1px solid red;
+  display: grid;
+  grid-template-columns: 15% 1fr 1fr 1fr;
+}
+
+.needs {
+  grid-column: 1 / 2;
+  border: 1px solid blue;
+}
+
+.coffee {
+  grid-column: 2 / 3;
+  border: 1px solid blue;
+}
+
+.coke {
+  grid-column: 3 / 4;
+  border: 1px solid blue;
+}
+
+.monster {
+  grid-column: 4 / 5;
+  border: 1px solid blue;
+}
+
+/* footer */
+.footer {
+  max-width: 960;
+  background: darkgrey;
+  padding: 20px;
+  margin: 15 0 0 0;
