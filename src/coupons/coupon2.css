@@ -253,6 +253,7 @@ align-items: flex-end;
   font-size: .72em;
   margin: 10;
   max-width: 25%;
+  overflow: unset;
 }
 
 .ramen .boldprice {
@@ -291,17 +292,17 @@ align-items: flex-end;
   background: white;
   text-align: center; 
   border: 4px solid yellow;
-  max-width: 55%;
+  max-width: 65%;
   max-height: 45%;
   margin: 0 10 15 0;
-  font-size: 1em;
+  font-size: .9em;
 }
 
 .nuts {
   grid-column: 2 / 3;
   border: 1px solid green;
   background: url(./img/nuts.png) no-repeat;
-  background-size: 65%; 
+  background-size: 75%; 
   background-position: 50% 25%;
   display: flex;
   align-items: flex-end;
@@ -327,11 +328,55 @@ align-items: flex-end;
 .yogurt {
   grid-column: 3 / 4;
   border: 1px solid grey;
+  background: url(./img/chobani.png) no-repeat;
+  background-size: 75%; 
+  background-position: 50% 25%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.yogurt p {
+  font-size: .72em;
+  margin: 0 10 8 0;
+  padding: 8;
+  max-width: 25%;
+}
+
+.yogurt .pricebox {
+  background: white;
+  text-align: center; 
+  border: 4px solid yellow;
+  max-width: 65%;
+  max-height: 25%;
+  margin: 0 0 25 5;
+  font-size: .9em;
 }
 
 .choc{
   grid-column: 4 / 5;
-  border: 1px solid yellow  ;
+  border: 1px solid yellow;
+  background: url(./img/chocs.png) no-repeat;
+  background-size: 75%; 
+  background-position: 50% 25%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.choc p {
+  font-size: .72em;
+  margin: 0 10 8 0;
+  padding: 8;
+  max-width: 35%;
+}
+
+.choc .pricebox {
+  background: white;
+  text-align: center; 
+  border: 4px solid yellow;
+  max-width: 55%;
+  max-height: 25%;
+  margin: 0 5 25 10;
+  font-size: .9em;
 }
 
 /* Area Five */
@@ -346,21 +391,65 @@ align-items: flex-end;
 .needs {
   grid-column: 1 / 2;
   border: 1px solid blue;
+  background: rgb(59, 133, 136);
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.needs .junk {
+  font-size: 1.5em;
+  margin: 5 0 5 10;
+}
+
+.needs p {
+  font-size: .9em;
+  margin: 7 0 0 10;
 }
 
 .coffee {
   grid-column: 2 / 3;
   border: 1px solid blue;
+  background: url(./img/coffee.png) no-repeat;
+  background-size: 35%;
+  background-position: 20%;
+  display: flex;
+  flex-direction: column;
 }
+
+.coffee p {
+  display: flex;
+  font-size: .9em;
+  max-width: 40%;
+  align-self: flex-end;
+  margin-top: 25;
+  margin-right: 5;
+  overflow: unset;
+}
+
+.coffee .boldprice {
+  margin-right: 20;
+  font-size: 1.3em;
+}
+
+
+
+
 
 .coke {
   grid-column: 3 / 4;
   border: 1px solid blue;
+  background: url(./img/coke.png) no-repeat;
+  background-size: 75%;
+  background-position: 50% 20%;
 }
 
 .monster {
   grid-column: 4 / 5;
   border: 1px solid blue;
+  background: url(./img/monster.png) no-repeat;
+  background-size: 65%;
+  background-position: 50% 20%;
 }
 
 /* footer */
