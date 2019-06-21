@@ -168,7 +168,7 @@ align-items: flex-end;
 .chips .overlay {
   background: white;
   text-align: center; 
-  border: 2px solid yellow;
+  border: 4px solid yellow;
   max-width: 45%;
   max-height: 55%;
   margin: 0 0 15 35;
@@ -205,7 +205,7 @@ align-items: flex-end;
 }
 
 .wine .pricebox {
-  border: 2px solid yellow;
+  border: 4px solid yellow;
   margin: 10 10 0 5;
   padding: 7;
   text-align: center;
@@ -273,12 +273,56 @@ align-items: flex-end;
 .tea {
   grid-column: 1 / 2;
   border: 1px solid blue;
+  background: url(./img/tea.png) no-repeat;
+  background-size: 65%; 
+  background-position: 50% 25%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.tea p {
+  font-size: .72em;
+  margin: 0 10 8 0;
+  padding: 8;
+  max-width: 55%;
+}
+
+.tea .pricebox {
+  background: white;
+  text-align: center; 
+  border: 4px solid yellow;
+  max-width: 55%;
+  max-height: 45%;
+  margin: 0 10 15 0;
+  font-size: 1em;
 }
 
 .nuts {
   grid-column: 2 / 3;
   border: 1px solid green;
+  background: url(./img/nuts.png) no-repeat;
+  background-size: 65%; 
+  background-position: 50% 25%;
+  display: flex;
+  align-items: flex-end;
 }
+
+.nuts p {
+  font-size: .72em;
+  margin-bottom: 8;
+  padding: 8;
+}
+
+.nuts .overlay {
+  background: white;
+  text-align: center; 
+  max-width: 45%;
+  max-height: 55%;
+  margin: 0 10 15 0;
+  font-size: .70em;
+  background: rgb(180, 69, 69);
+}
+
 
 .yogurt {
   grid-column: 3 / 4;
@@ -325,3 +369,4 @@ align-items: flex-end;
   background: darkgrey;
   padding: 20px;
   margin: 15 0 0 0;
+}
