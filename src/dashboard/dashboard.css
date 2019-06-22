@@ -1,0 +1,46 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: grey;
+}
+
+nav {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  margin: 10 0 0 0;
+}
+
+nav .navtop {
+  max-height: 7.5vh;
+  grid-row: 1 / 2;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 5;
+}
+
+nav .navtop .dashboard {
+  font-size: 2em;
+}
+
+nav .navtop img {
+  max-height: 7.5vh;
+}
+
+nav .navtop p {
+  font-size: 1.25em;
+}
+
+nav .navbottom {
+  max-height: 7.5vh;
+  grid-row: 2 / 2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: .5px solid black;
+}
+
+nav .navbottom i {
+  font-size: 2em;
+}
+
