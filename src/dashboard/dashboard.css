@@ -39,6 +39,7 @@ nav .navtop .dashboard {
 
 nav .navtop img {
   max-height: 7.5vh;
+  border-radius: 50%;
 }
 
 nav .navtop p {
@@ -60,9 +61,16 @@ nav .navbottom i {
 }
 
 
-/* Info Boxes */
+/* Information Boxes */
+main section h1 {
+  font-size: 2em;
+  text-align: center;
+  background-color: var(--aside);
+  margin-top: 2%;
+}
+
 .info-1 {
-  max-height: 60vh;
+  max-height: 80vh;
   max-width: 100vw;
   background-color: rgb(90, 92, 104);
   display: grid;
@@ -169,4 +177,150 @@ nav .navbottom i {
 
 .info-1 .inventory p {
   font-size: 1em;
+}
+
+
+/* Social Media Links */
+main section .banner {
+  font-size: 2em;
+  text-align: center;
+  background-color: var(--aside);
+  margin-top: 3.5%;
+}
+
+.info-2 {
+  max-height: 80vh;
+  max-width: 100vw;
+  background-color: rgb(90, 92, 104);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: .75em;
+}
+
+.info-2 .facebook {
+  border: 2px solid #072A40;
+  background-color: var(--mback);
+  padding: 10%;
+  margin-top: .75em;
+  margin-left: .75em;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-2 .facebook i {
+  font-size: 4em;
+  margin-bottom: .25em;
+  text-align: center;
+}
+
+.info-2 .facebook p {
+  font-size: 1em;
+  text-align: center;
+}
+
+.info-2 .instagram {
+  border: 2px solid #072A40;
+  background-color: var(--mback);
+  padding: 10%;
+  margin-top: .75em;
+  margin-right: .75em;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-2 .instagram i {
+  font-size: 4em;
+  margin-bottom: .25em;
+  text-align: center;
+}
+
+.info-2 .instagram p {
+  font-size: 1em;
+  text-align: center;
+}
+
+.info-2 .youtube {
+  border: 2px solid #072A40;
+  background-color: var(--mback);
+  padding: 10%;
+  margin-bottom: .75em;
+  margin-left: .75em;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-2 .youtube i {
+  font-size: 4em;
+  margin-bottom: .25em;
+  text-align: center;
+}
+
+.info-2 .youtube p {
+  font-size: 1em;
+  text-align: center;
+}
+
+.info-2 .pinterest {
+  border: 2px solid #072A40;
+  background-color: var(--mback);
+  padding: 10%;
+  margin-right: .75em;
+  margin-bottom: .75em;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-2 .pinterest i {
+  font-size: 4em;
+  margin-bottom: .25em;
+  text-align: center;
+}
+
+.info-2 .pinterest p {
+  font-size: 1em;
+  text-align: center;
+}
+
+
+/* Live Charts */
+main section .banner {
+  font-size: 2em;
+  text-align: center;
+  background-color: var(--aside);
+  margin-top: 3.5%;
+  margin-bottom: .75em;
+}
+
+.charts {
+  max-width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: .75em;
+  padding: .5em;
+  background: rgb(90, 92, 104);
+}
+
+.chart-1 img {
+  max-width: 100%;
+  height: auto;
+}
+
+.chart-2 img {
+  max-width: 100%;
+  height: auto;
+}
+
+.chart-3 img {
+  max-width: 100%;
+  height: auto;
+}
+
+footer h1 {
+  font-size: .75em;
+  text-align: center;
+  background-color: var(--aside);
+  padding: .25em;
+  margin-top: .75em;
 }
