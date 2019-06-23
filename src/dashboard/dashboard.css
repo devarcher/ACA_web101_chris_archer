@@ -1,13 +1,27 @@
+/* Global Settings */
+
+:root { 
+  --aside: #072A40;
+  --words: #A7AABC; 
+  --borders: #7181B8; 
+  --mback: #434656; 
+}
+
 body {
   width: 100vw;
   height: 100vh;
-  background-color: grey;
+  background-color: var(--mback);
+  color: var(--words);
+  font-family: 'B612 Mono', monospace;
+  padding: .5em;
+  line-height: 1.25;
 }
 
+/* Navigation */
 nav {
   display: grid;
   grid-template-rows: 1fr 1fr;
-  margin: 10 0 0 0;
+  margin-top: .5em;
 }
 
 nav .navtop {
@@ -16,7 +30,7 @@ nav .navtop {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin-bottom: 5;
+  margin-bottom: .5em;
 }
 
 nav .navtop .dashboard {
@@ -37,10 +51,122 @@ nav .navbottom {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border-top: .5px solid black;
+  border-top: .1em solid black;
 }
 
 nav .navbottom i {
+  margin-top: 10;
   font-size: 2em;
 }
 
+
+/* Info Boxes */
+.info-1 {
+  max-height: 60vh;
+  max-width: 100vw;
+  background-color: rgb(90, 92, 104);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: .75em;
+}
+
+.info-1 .revenue {
+  border: 2px solid #072A40;
+  background-color: var(--mback);
+  padding: 10%;
+  margin-top: .75em;
+  margin-left: .75em;
+}
+
+.info-1 .revenue i {
+  font-size: 2em;
+  margin-bottom: .25em;
+}
+
+.info-1 .revenue p {
+  font-size: 1.em;
+}
+
+.info-1 .expenses {
+  border: 2px solid #072A40;
+  background-color: var(--mback);
+  padding: 10%;
+  margin-top: .75em;
+  margin-right: .75em;
+}
+
+.info-1 .expenses i {
+  font-size: 2em;
+  margin-bottom: .25em;
+}
+
+.info-1 .expenses p {
+  font-size: 1em;
+}
+
+.info-1 .users {
+  border: 2px solid #072A40;
+  background-color: var(--mback);
+  padding: 10%;
+  margin-left: .75em;
+}
+
+.info-1 .users i {
+  font-size: 2em;
+  margin-bottom: .25em;
+}
+
+.info-1 .users p {
+  font-size: 1em;
+}
+
+.info-1 .online {
+  border: 2px solid #072A40;
+  background-color: var(--mback);
+  padding: 10%;
+  margin-right: .75em;
+}
+
+.info-1 .online i {
+  font-size: 2em;
+  margin-bottom: .25em;
+}
+
+.info-1 .online p {
+  font-size: 1em;
+}
+
+.info-1 .orders {
+  border: 2px solid #072A40;
+  background-color: var(--mback);
+  padding: 10%;
+  margin-left: .75em;
+  margin-bottom: .75em;
+}
+
+.info-1 .orders i {
+  font-size: 2em;
+  margin-bottom: .25em;
+}
+
+.info-1 .orders p {
+  font-size: 1em;
+}
+
+.info-1 .inventory {
+  border: 2px solid #072A40;
+  background-color: var(--mback);
+  padding: 10%;
+  margin-right: .75em;
+  margin-bottom: .75em;
+}
+
+.info-1 .inventory i {
+  font-size: 2em;
+  margin-bottom: .25em;
+}
+
+.info-1 .inventory p {
+  font-size: 1em;
+}
