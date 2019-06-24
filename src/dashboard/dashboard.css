@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 /* Global Settings */
 
 :root { 
@@ -89,6 +94,8 @@ main section h1 {
   padding: 10%;
   margin-top: .75em;
   margin-left: .75em;
+  display: flex;
+  flex-direction: column;
 }
 
 .info-1 .revenue i {
@@ -106,6 +113,8 @@ main section h1 {
   padding: 10%;
   margin-top: .75em;
   margin-right: .75em;
+  display: flex;
+  flex-direction: column;
 }
 
 .info-1 .expenses i {
@@ -122,6 +131,8 @@ main section h1 {
   background-color: var(--mback);
   padding: 10%;
   margin-left: .75em;
+  display: flex;
+  flex-direction: column;
 }
 
 .info-1 .users i {
@@ -138,6 +149,8 @@ main section h1 {
   background-color: var(--mback);
   padding: 10%;
   margin-right: .75em;
+  display: flex;
+  flex-direction: column;
 }
 
 .info-1 .online i {
@@ -155,6 +168,8 @@ main section h1 {
   padding: 10%;
   margin-left: .75em;
   margin-bottom: .75em;
+  display: flex;
+  flex-direction: column;
 }
 
 .info-1 .orders i {
@@ -172,6 +187,8 @@ main section h1 {
   padding: 10%;
   margin-right: .75em;
   margin-bottom: .75em;
+  display: flex;
+  flex-direction: column;
 }
 
 .info-1 .inventory i {
@@ -209,6 +226,8 @@ main section .banner {
   margin-left: .75em;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .info-2 .facebook i {
@@ -230,6 +249,8 @@ main section .banner {
   margin-right: .75em;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .info-2 .instagram i {
@@ -251,6 +272,8 @@ main section .banner {
   margin-left: .75em;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .info-2 .youtube i {
@@ -272,6 +295,8 @@ main section .banner {
   margin-bottom: .75em;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .info-2 .pinterest i {
@@ -434,9 +459,10 @@ footer h1 {
     border: 2px solid #072A40;
     background-color: var(--mback);
     padding: 2%;
-    max-height: 15vh;
     width: 15%;
     margin: 0;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .info-1 .revenue i {
@@ -451,9 +477,10 @@ footer h1 {
     border: 2px solid #072A40;
     background-color: var(--mback);
     padding: 2%;
-    max-height: 15vh;
     width: 15%;
     margin: 0;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .info-1 .expenses i {
@@ -468,9 +495,10 @@ footer h1 {
     border: 2px solid #072A40;
     background-color: var(--mback);
     padding: 2%;
-    max-height: 15vh;
     width: 15%;
     margin: 0;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .info-1 .users i {
@@ -485,9 +513,10 @@ footer h1 {
     border: 2px solid #072A40;
     background-color: var(--mback);
     padding: 2%;
-    max-height: 15vh;
     width: 15%;
     margin: 0;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .info-1 .online i {
@@ -502,9 +531,10 @@ footer h1 {
     border: 2px solid #072A40;
     background-color: var(--mback);
     padding: 2%;
-    max-height: 15vh;
     width: 15%;
     margin: 0;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .info-1 .orders i {
@@ -515,13 +545,14 @@ footer h1 {
    font-size: 1em;
   }
 
-  .info-1 .inventory{
+  .info-1 .inventory {
     border: 2px solid #072A40;
     background-color: var(--mback);
     padding: 2%;
-    max-height: 15vh;
     width: 15%;
     margin: 0;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .info-1 .inventory i {
