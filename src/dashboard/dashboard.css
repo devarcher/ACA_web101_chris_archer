@@ -1,9 +1,9 @@
+/* Global Settings */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-/* Global Settings */
 
 :root { 
   --aside: #072A40;
@@ -66,6 +66,10 @@ nav .navbottom i {
   font-size: 2em;
 }
 
+nav .navbottom i:hover {
+  color: var(--aside);
+}
+
 
 /* Information Boxes */
 main section h1 {
@@ -86,6 +90,10 @@ main section h1 {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: .75em;
+}
+
+.info-1 > div:hover {
+  background-color: rgba(7, 42, 64, 0.473)
 }
 
 .info-1 .revenue {
@@ -200,7 +208,6 @@ main section h1 {
   font-size: 1em;
 }
 
-
 /* Social Media Links */
 main section .banner {
   font-size: 2em;
@@ -216,6 +223,10 @@ main section .banner {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: .75em;
+}
+
+.info-2 > .abc:hover {
+   background-color: rgba(7, 42, 64, 0.473)
 }
 
 .info-2 .facebook {
@@ -309,7 +320,6 @@ main section .banner {
   font-size: 1em;
   text-align: center;
 }
-
 
 /* Live Charts */
 main section .banner {
@@ -480,8 +490,7 @@ footer h1 {
     border-bottom: 2px solid var(--aside);
   }
 
-
-   /* Main Right Structure */
+  /* Main Right Structure */
   .right-container {
     display: grid;
     grid-template-rows: .75fr 2fr 2fr;
@@ -606,7 +615,7 @@ footer h1 {
    font-size: 1em;
   }
   
-/* Main Right Structure - Middle */
+  /* Main Right Structure - Middle */
   .info-2 {
     grid-row: 2 / 3;
     max-width: 100%;
@@ -706,7 +715,7 @@ footer h1 {
     font-size: 1em;
   }
 
-/* Main Right Content - Bottom */
+  /* Main Right Content - Bottom */
   .charts {
     display: flex;
     justify-content: space-around;
