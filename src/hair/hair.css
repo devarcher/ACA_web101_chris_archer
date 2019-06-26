@@ -208,8 +208,13 @@ footer .icons {
 }
 
 @media only screen and (min-width: 1025px) {
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  
   .showcase {
-    height: 75vh;
+    height: 65vh;
     background-position: 30% 30%;
   }
 
@@ -235,12 +240,27 @@ footer .icons {
   
   .midsection {
     min-height: 55vh;
-  }
+    display: flex;
+   }
 
   .midsection .image {
-    background-size: cover;
+    background-size: contain;
+    min-height: 45vh;
+    min-width: auto;
+    background-position: 50% 20%;
   }
 
-  .midsection 
+  .midsection .image p {
+    margin-bottom: -35;
+  }
 
+  footer {
+    margin-top: 10;
+    padding: 10;
+    margin-bottom: 10;
+  }
+
+  footer p {
+    width: 15rem;
+  }
 } 
