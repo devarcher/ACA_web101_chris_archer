@@ -67,7 +67,7 @@ nav .navbottom i {
 }
 
 nav .navbottom i:hover {
-  color: white;
+  color: var(--borders);
 }
 
 
