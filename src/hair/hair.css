@@ -1,16 +1,17 @@
+/* Global */
 body {
   width: 100%;
   height: 100%;
   font-size: 14;
   line-height: 1.25;
   font-family: 'Montserrat', sans-serif;
+  padding: 10;  
 }
 
 .main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1%;
 }
 
 /* Header and Nav */
@@ -20,7 +21,6 @@ body {
   font-size: 2em;
   display: flex;
   align-content: center;
-  margin-top: 10%;
 }
 
 .main .top nav {
@@ -41,6 +41,13 @@ body {
   list-style: none;
 }
 
+.fa-bars {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
 /* Showcase */
 .showcase {
   background: url(./img/the-beacon.jpg) no-repeat;
@@ -54,7 +61,91 @@ body {
 }
 
 .showcase {
-  
+  justify-content: flex-end;
+}
+
+.showcase h1 {
+  color: black;
+  background: white;
+  width: 16rem;
+  padding: .2rem .3rem;
+  font-weight: 900;
+  margin-bottom: 10;
+}
+
+.showcase p {
+  color: white;
+  background: grey;
+  width: 7rem;
+  padding: .2rem .3rem;
+  font-weight: 900;
 }
 
 
+/* Mid-Section */
+.midsection {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.father {
+  background: url(./img/the-father.jpg) no-repeat;
+}
+
+.actor {
+  background: url(./img/the-actor.jpg) no-repeat;
+}
+
+.nerd {
+  background: url(./img/the-nerd.jpg) no-repeat;
+}
+
+.image {
+  width: 90%;
+  height: 300px;
+  background-position: 50% 30%;
+  margin: 0;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.midsection p {
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+
+/* Footer */
+footer {
+  padding: 2em; 
+  background: black;
+  color: white;
+  text-align: center;
+}
+
+footer .icons {
+  width: 100%;
+  font-size: 3em;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.icons .fa-twitter-square {
+  margin: 0 15 0 15;
+}
+
+.icons .fa-facebook-square {
+  margin: 0 15 0 15;
+}
+
+.icons .fa-google-plus-square {
+  margin: 0 15 0 15;
+}
+
+.icons .fa-pinterest-square {
+  margin: 0 15 0 15;
+}
