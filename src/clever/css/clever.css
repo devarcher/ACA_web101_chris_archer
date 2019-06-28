@@ -1,0 +1,153 @@
+/* Global */
+body {
+  font-family: 'Open Sans', sans-serif;
+  width: 100%;
+  height: 100%;
+  background-color: #EBECF2
+}
+
+.wrapper {
+  border: 2px solid grey;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+}
+
+/* Navigation */
+.top-nav {
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(138, 169, 197, 0.322);
+}
+
+.top-nav h1 {
+  font-family: 'Poiret One', cursive;
+  font-size: 2em;
+  margin-left: 10;
+}
+
+.top-nav ul {
+  min-width: 30vw;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.top-nav ul li {
+  list-style: none;
+  text-transform: uppercase;
+}
+
+/* Title Row */
+.train-row {
+  display: grid;
+  grid-template-rows: 1fr auto auto;
+  justify-content: center;
+  background-color: rgb(182,174,190, .322);
+}
+
+.train-row .subject {
+  font-family: 'Poiret One', cursive;
+  font-size: 4.5em;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.train-row .tilde {
+  font-family: 'Poiret One', cursive;
+  font-size: 4.5em;
+  text-align: center;
+}
+
+.train-row p {
+  max-width: 750px;
+  text-align: center;
+  font-size: 1em;
+  padding-bottom: 30px;
+}
+
+
+
+/* Six Things */
+.hero-wrapper {
+  margin: 0 auto;
+  max-width: 950px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-content: center;
+}
+
+.hero-wrapper .far, .fas {
+  font-size: 2rem;
+}
+
+.left-icons {
+  grid-column: 1 / 2;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.left-icons p {
+  text-align: right;
+  padding: 10;
+  font-size: .75em;
+  font-family: 'Lato', sans-serif;
+}
+
+ .left-icons span::after {
+  color: grey;
+}
+
+.left-icons p span {
+  font-family: 'Catamaran', sans-serif;
+  font-size: 1.5em;
+}
+
+.left-icons i {
+  padding: 15;
+  justify-self: center;
+  border-radius: 50%;
+}
+
+.heroimage {
+  grid-column: 2 / 3;
+}
+
+.heroimage img {
+  max-width: 100%;
+  align-self: center;
+}
+
+.right-icons {
+  grid-column: 3 / 4;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.right-icons p {
+  text-align: left;
+  padding: 10;
+  font-size: .75em;
+  font-family: 'Lato', sans-serif;
+}
+
+.right-icons p span {
+  font-size: 1.5em;
+  font-family: 'Catamaran', sans-serif; 
+}
+
+.right-icons i {
+  padding: 10;
+  justify-self: center;
+  border-radius: 50%;
+}
+
+.hero-wrapper > p {
+  padding: 4;
+}
