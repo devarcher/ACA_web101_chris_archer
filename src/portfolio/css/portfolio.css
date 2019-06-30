@@ -95,6 +95,11 @@ nav h1 {
   margin: 3%;
 }
 
+
+.project1 .port h3 {
+  grid-column: 1 / 2;
+}
+
 .project1 img {
   width: 450px;
   max-width: 100%;
