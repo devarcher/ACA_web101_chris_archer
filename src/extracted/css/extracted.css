@@ -1,0 +1,128 @@
+/* Fonts 
+font-family: 'Roboto', sans-serif;
+font-family: 'Lato', sans-serif;
+
+
+/* Global */
+
+/* Color Theme Swatches in RGBA */
+:root {
+  --gold: rgba(242, 197, 114, 1);
+  --bronze: rgba(217, 160, 91, 1);
+  --ruddy: rgba(140, 93, 66, 1);
+  --beige: rgba(217, 171, 154, 1);
+  --coffee: rgba(64, 53, 52, 1);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header / Navigation */
+.top {
+  background: url(../img/hero.jpg) no-repeat;
+  background-size: cover;
+  min-width: 100%;
+  min-height: 28vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.top h1 {
+  font-size: 1.4em;
+  align-self: flex-end;
+  padding: 15;
+  margin-bottom: 10;
+  color: var(--beige);
+  background: rgba(140, 93, 66, .6);
+}
+
+.top i {
+  color: rgba(242, 197, 114, .8);
+  font-size: 1.75em;
+  padding: 10;
+}
+
+.logo-placeholder {
+  width: 100%;
+  height: 60px;
+  background-color: rgba(140, 93, 66, .8);
+}
+
+.logo-placeholder h1 {
+  margin-top: .15em;
+  font-family: 'Quattrocento', serif;
+  font-size: 2.5em;
+  color: var(--coffee);
+  letter-spacing: .2em;
+  text-justify: center;
+  text-align: center;
+}
+
+
+/* Locaction Search Form */
+.flex-form {
+  width: 100%;
+  min-height: 150px;
+  background-color: rgba(64, 30, 18, .8);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.flex-form > * {
+  padding: 1em;
+  background: rgba(0, 0, 0, 0.6);
+  border-right: 1px solid grey;
+  border-radius: 0;
+  color: lightgray;
+  -webkit-appearance: none;
+}
+
+
+/* Action Area */
+.why {
+  grid-area: why;
+}
+
+.how {
+  grid-area: how;
+}
+
+.secret-1 {
+  grid-area: secret-1;
+}
+
+.secret-2 {
+  grid-area: secret-2;
+}
+
+.action-btns {
+  width: 100%;
+  min-height: 66vh;
+  background: rgba(1, 11, 43, .8);
+  display: grid;
+  grid-template-columns: 1fr / 1fr;
+  grid-template-areas:
+    "why why"
+    "how how"
+    "secret-1 secret-2";
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
