@@ -1,3 +1,6 @@
+/* great work.!Nothing you have to change but left some ideas to play with. 
+Remove these notes, merge into master, and link in campus manager. */
+
 /* Global */
 body {
   width: 100%;
@@ -5,6 +8,7 @@ body {
   font-size: 14;
   line-height: 1.25;
   font-family: 'Montserrat', sans-serif;
+  /*  try padding: 0. but 10px works. your choice! */
   padding: 10;  
 }
 
@@ -60,6 +64,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  /* optional change */
+  height: 50vh;
 }
 
 .showcase h1 {
@@ -69,6 +75,9 @@ body {
   padding: .2rem .3rem;
   font-weight: 900;
   margin-bottom: 4;
+  /* optional change */
+  font-size: 3em;
+  background: rgba(255, 255, 255, 0.438);  
 }
 
 .showcase p {
@@ -77,6 +86,24 @@ body {
   width: 7rem;
   padding: .2rem .3rem;
   font-weight: 900;
+  /* optional change */
+  font-size: 1.5em;
+  width: 150px;
+  margin: 10px 0;
+}
+
+
+.showcase p:hover {
+  /* 
+  buttons always come with an animation 
+  to inform the user that it's clickable.
+  */ 
+  
+  /*
+  add a background color change here. from grey to dark grey?
+  and change the cursor: from arrow to glove 
+  */
+
 }
 
 /* Mid-Section */
