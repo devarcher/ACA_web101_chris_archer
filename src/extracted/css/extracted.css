@@ -117,6 +117,7 @@ body {
     "secret-1 secret-2";
   justify-content: space-around;
   align-items: center;
+  padding-left: 8px;  
 }
 
 .why {
