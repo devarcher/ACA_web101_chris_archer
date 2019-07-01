@@ -1,0 +1,293 @@
+/* great work.!Nothing you have to change but left some ideas to play with. 
+Remove these notes, merge into master, and link in campus manager. */
+
+/* Global */
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 14;
+  line-height: 1.25;
+  font-family: 'Montserrat', sans-serif;
+  /*  try padding: 0. but 10px works. your choice! */
+  padding: 10;  
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header and Nav */
+.main .top header {
+  width: 100%;
+  height: 50%;
+  font-size: 2em;
+  display: flex;
+  align-content: center;
+}
+
+.main .top nav {
+  width: 100%;
+  height: 50%;
+  font-size: .9em;
+}
+
+.main .top nav ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin-top: 2%;
+}
+
+.main .top nav ul li {
+  list-style: none;
+}
+
+.fa-bars {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+/* Showcase */
+.showcase {
+  background: url(./img/the-beacon.jpg) no-repeat;
+  background-size: cover;
+  min-width: 100%;
+  min-height: 33vh;
+  margin-top: 3em;
+  padding: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* optional change */
+  height: 50vh;
+}
+
+.showcase h1 {
+  color: black;
+  background: white;
+  width: 16rem;
+  padding: .2rem .3rem;
+  font-weight: 900;
+  margin-bottom: 4;
+  /* optional change */
+  font-size: 3em;
+  background: rgba(255, 255, 255, 0.438);  
+}
+
+.showcase p {
+  color: white;
+  background: grey;
+  width: 7rem;
+  padding: .2rem .3rem;
+  font-weight: 900;
+  /* optional change */
+  font-size: 1.5em;
+  width: 150px;
+  margin: 10px 0;
+}
+
+
+.showcase p:hover {
+  /* 
+  buttons always come with an animation 
+  to inform the user that it's clickable.
+  */ 
+  
+  /*
+  add a background color change here. from grey to dark grey?
+  and change the cursor: from arrow to glove 
+  */
+
+}
+
+/* Mid-Section */
+.midsection {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.father {
+  background: url(./img/the-father.jpg) no-repeat;
+}
+
+.actor {
+  background: url(./img/the-actor.jpg) no-repeat;
+}
+
+.nerd {
+  background: url(./img/the-nerd.jpg) no-repeat;
+}
+
+.image {
+  width: 90%;
+  height: 300px;
+  background-position: 50% 30%;
+  margin: 0;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.midsection p {
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+  padding: 2em; 
+  background: black;
+  color: white;
+  text-align: center;
+}
+
+footer .icons {
+  width: 100%;
+  font-size: 3em;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.icons .fa-twitter-square {
+  margin: 0 15 0 15;
+}
+
+.icons .fa-facebook-square {
+  margin: 0 15 0 15;
+}
+
+.icons .fa-google-plus-square {
+  margin: 0 15 0 15;
+}
+
+.icons .fa-pinterest-square {
+  margin: 0 15 0 15;
+}
+
+@media only screen and (min-width: 768px) {
+  /* Navigation */
+  .fa-bars {
+    display: none;
+  }
+
+  .main .top nav ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+
+  .showcase {
+    width: 100%;
+    min-height: 50vh; 
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .showcase h1, p {
+    font-size: 1.5em;
+    width: 24rem;
+    text-align: center;
+  }
+
+  .showcase p {
+    width: 10rem;
+  }
+
+  /* Mid-Section */
+  .midsection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .midsection .image {
+    max-width: 32%;
+    margin: 0;
+  }
+
+  footer {
+    display: flex;
+  }
+
+  footer p {
+    margin-top: 1rem;
+  }
+
+  footer .icons {
+    width: 100%;
+    font-size: 3em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .showcase {
+    height: 65vh;
+    background-position: 30% 30%;
+  }
+
+  .showcase h1 {
+    color: black;
+    background: white;
+    width: 55rem;
+    font-size: 3rem;
+    padding: .2rem .3rem;
+    font-weight: 900;
+    margin-bottom: 4;
+  }
+
+  .showcase p {
+    color: white;
+    background: grey;
+    width: 7rem;
+    width: 23rem;
+    font-size: 3rem;
+    padding: .2rem .3rem;
+    font-weight: 900;
+  }
+  
+  .midsection {
+    min-height: 55vh;
+    display: flex;
+   }
+
+  .midsection .image {
+    background-size: contain;
+    min-height: 45vh;
+    min-width: auto;
+    background-position: 50% 20%;
+  }
+
+  .midsection .image p {
+    margin-bottom: -35;
+  }
+
+  footer {
+    margin-top: 10;
+    padding: 10;
+    margin-bottom: 10;
+  }
+
+  footer p {
+    width: 15rem;
+  }
+} 
