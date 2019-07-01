@@ -27,6 +27,10 @@ body{
   color: var(--light);
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Navigation */
 nav {
   width: 100%;
@@ -66,7 +70,8 @@ nav h1 {
 /* Banner */
 .portfolio {
   text-align: center;
-  margin-top: 25;
+  margin-top: 25px;
+  font-size: 1.5em;
   padding: .8em 3em;
   background: var(--primary);
   border: 1px solid darkgrey;
@@ -112,7 +117,8 @@ nav h1 {
   grid-column: 2 / 3;
   grid-row: -1 / 2;
   display: flex;
-  margin-top: 45;
+  margin-top: 55;
+  font-size: 1.5em;
 }
 
 .project1 p {
@@ -137,6 +143,7 @@ nav h1 {
   grid-row: -1 / 2;
   display: flex;
   margin-top: 45;
+  font-size: 1.5em;
 }
 
 .project2 p {
@@ -162,6 +169,7 @@ nav h1 {
   grid-row: -1 / 2;
   display: flex;
   margin-top: 45;
+  font-size: 1.5em;
 }
 
 .project3 p {
@@ -171,6 +179,120 @@ nav h1 {
   align-self: center;
   max-width: 600px;
 }
+
+.project4 .port h3 {
+  grid-column: 1 / 2;
+}
+
+.project4 img {
+  width: 450px;
+  max-width: 100%;
+  align-self: center;
+  justify-self: right;
+  border: 1px solid black;
+}
+
+.project4 h1 {
+  grid-column: 2 / 3;
+  grid-row: -1 / 2;
+  display: flex;
+  margin-top: 30;
+  font-size: 1.5em;
+}
+
+.project4 p {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  display: flex;
+  align-self: center;
+  max-width: 600px;
+}
+
+.project5 .port h3 {
+  grid-column: 1 / 2;
+}
+
+.project5 img {
+  width: 450px;
+  max-width: 100%;
+  align-self: center;
+  justify-self: right;
+  border: 1px solid black;
+}
+
+.project5 h1 {
+  grid-column: 2 / 3;
+  grid-row: -1 / 2;
+  display: flex;
+  margin-top: 45;
+  font-size: 1.5em;
+}
+
+.project5 p {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  display: flex;
+  align-self: center;
+  max-width: 600px;
+}
+
+.project6 .port h3 {
+  grid-column: 1 / 2;
+}
+
+.project6 img {
+  width: 450px;
+  max-width: 100%;
+  align-self: center;
+  justify-self: right;
+  border: 1px solid black;
+}
+
+.project6 h1 {
+  grid-column: 2 / 3;
+  grid-row: -1 / 2;
+  display: flex;
+  margin-top: 45;
+  font-size: 1.5em;
+}
+
+.project6 p {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  display: flex;
+  align-self: center;
+  max-width: 600px;
+}
+
+.project7 .port h3 {
+  grid-column: 1 / 2;
+}
+
+.project7 img {
+  width: 450px;
+  max-width: 100%;
+  align-self: center;
+  justify-self: right;
+  border: 1px solid black;
+}
+
+.project7 h1 {
+  grid-column: 2 / 3;
+  grid-row: -1 / 2;
+  display: flex;
+  margin-top: 60;
+  font-size: 1.5em;
+}
+
+.project7 p {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  display: flex;
+  align-self: center;
+  max-width: 600px;
+}
+
+
 
 .footer {
   text-align: center;
@@ -216,7 +338,7 @@ nav h1 {
   .port {
     display: grid;
     gap: 1em;
-    grid-template-rows: 1fr auto;
+    grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr;
     max-width: 450px;
     margin-right: 20;
@@ -230,14 +352,16 @@ nav h1 {
   .project1 h1 {
     display: flex;
     font-size: 1.25em;
-    margin: 0 0 110 0;
+    margin: 0;
+    align-self: flex-start;
   }
 
   .project1 p {
     grid-row: 2 / 3;
     display: flex;
-    align-content: space-around;
+    align-self: flex-start;
     font-size: .8em;
+    margin-top: 35px;
   }
 
   .project2 img {
@@ -248,13 +372,15 @@ nav h1 {
   .project2 h1 {
     display: flex;
     font-size: 1.25em;
-    margin: 0 0 130 0;
+    align-self: flex-start;
+    margin: 0;
   }
 
   .project2 p {
     grid-row: 2 / 3;
     font-size: .8em;
-    align-content: center;
+    align-self: flex-start;
+    margin-top: 35px;
   }
 
   .project3 img {
@@ -265,13 +391,94 @@ nav h1 {
   .project3 h1 {
     display: flex;
     font-size: 1.25em;
-    margin: 0 0 100 0;
+    align-self: flex-start;
+    margin: 0;
   }
 
   .project3 p {
     grid-row: 2 / 3;
     font-size: .8em;
-    align-self: flex-end;
+    align-self: flex-start;
+    margin-top: 35px;
+  }
+
+  .project4 img {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .project4 h1 {
+    display: flex;
+    font-size: 1.25em;
+    align-self: flex-start;
+    margin: 0;
+  }
+
+  .project4 p {
+    grid-row: 2 / 3;
+    font-size: .8em;
+    align-self: flex-start;
+    margin-top: 35px;
+  }
+
+  .project5 img {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .project5 h1 {
+    display: flex;
+    font-size: 1.25em;
+    align-self: flex-start;
+    margin: 0;
+  }
+
+  .project5 p {
+    grid-row: 2 / 3;
+    display: flex;
+    font-size: .8em;
+    align-self: flex-start;
+    margin-top: 35px;
+  }
+
+  .project6 img {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .project6 h1 {
+    display: flex;
+    font-size: 1.25em;
+    align-self: flex-start;
+    margin: 0;
+  }
+
+  .project6 p {
+    grid-row: 2 / 3;
+    display: flex;
+    font-size: .8em;
+    align-self: flex-start;
+    margin-top: 35px;
+  }
+
+  .project7 img {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .project7 h1 {
+    display: flex;
+    font-size: 1.25em;
+    align-self: flex-start;
+    margin: 0;
+  }
+
+  .project7 p {
+    grid-row: 2 / 3;
+    display: flex;
+    font-size: .8em;
+    align-self: flex-start;
+    margin-top: 35px;
   }
 }
 
@@ -324,14 +531,16 @@ nav h1 {
   .project1 h1 {
     display: flex;
     font-size: 1.25em;
-    margin: 0 0 75 0;
+    align-self: flex-start;
+    margin: 0;
   }
 
   .project1 p {
     grid-row: 2 / 3;
     display: flex;
-    align-content: space-around;
     font-size: .8em;
+    align-self: flex-start;
+    margin-top: 35px;
   }
 
   .project2 img {
@@ -341,16 +550,19 @@ nav h1 {
     grid-row: 1 / 2;
   }
 
-  .project2 h1 {
+.project2 h1 {
     display: flex;
     font-size: 1.25em;
-    margin: 0 0 100 0;
+    align-self: flex-start;
+    margin: 0;
   }
 
   .project2 p {
     grid-row: 2 / 3;
+    display: flex;
     font-size: .8em;
-    align-content: center;
+    align-self: flex-start;
+    margin-top: 35px;
   }
 
   .project3 img {
@@ -363,13 +575,100 @@ nav h1 {
   .project3 h1 {
     display: flex;
     font-size: 1.25em;
-    margin: 0 0 80 0;
+    align-self: flex-start;
+    margin: 0;
   }
 
   .project3 p {
     grid-row: 2 / 3;
+    display: flex;
     font-size: .8em;
-    align-self: flex-end;
+    align-self: flex-start;
+    margin-top: 35px;
   }
 
+  .project4 img {
+    width: auto;
+    height: auto;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .project4 h1 {
+    display: flex;
+    font-size: 1.25em;
+    align-self: flex-start;
+    margin: 0;
+  }
+
+  .project4 p {
+    grid-row: 2 / 3;
+    display: flex;
+    font-size: .8em;
+    align-self: flex-start;
+    margin-top: 35px;
+  }
+
+  .project5 img {
+    width: auto;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .project5 h1 {
+    display: flex;
+    font-size: 1.25em;
+    align-self: flex-start;
+    margin: 0;
+  }
+
+  .project5 p {
+    grid-row: 2 / 3;
+    display: flex;
+    font-size: .8em;
+    align-self: flex-start;
+    margin-top: 35px;
+  }
+
+  .project6 img {
+    width: auto;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .project6 h1 {
+    display: flex;
+    font-size: 1.25em;
+    align-self: flex-start;
+    margin: 0;
+  }
+
+  .project6 p {
+    grid-row: 2 / 3;
+    display: flex;
+    font-size: .8em;
+    align-self: flex-start;
+    margin-top: 35px;
+  }
+
+  .project7 img {
+    width: auto;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .project7 h1 {
+    display: flex;
+    font-size: 1.25em;
+    align-self: flex-start;
+    margin: 0;
+  }
+
+  .project7 p {
+    grid-row: 2 / 3;
+    display: flex;
+    font-size: .8em;
+    align-self: flex-start;
+    margin-top: 35px;
+  }
 }
