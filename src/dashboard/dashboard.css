@@ -18,8 +18,6 @@ body {
   background-color: var(--mback);
   color: var(--words);
   font-family: 'B612 Mono', monospace;
-  /* navbars and footers are usually edge to edge. try: padding: .5em 0; up to you. */
-  padding: .5em;
   line-height: 1.25;
 }
 
@@ -69,6 +67,7 @@ nav .navbottom i {
 
 nav .navbottom i:hover {
   color: var(--borders);
+  cursor: pointer;
 }
 
 
@@ -94,7 +93,8 @@ main section h1 {
 }
 
 .info-1 > div:hover {
-  background-color: rgba(7, 42, 64, 0.473)
+  background-color: rgba(7, 42, 64, 0.473);
+  cursor: pointer;
 }
 
 .info-1 .revenue {
@@ -227,7 +227,8 @@ main section .banner {
 }
 
 .info-2 > .abc:hover {
-   background-color: rgba(7, 42, 64, 0.473)
+   background-color: rgba(7, 42, 64, 0.473);
+   cursor: pointer;
 }
 
 .info-2 .facebook {
@@ -366,13 +367,6 @@ footer h1 {
 
 /* Landscape Tablet and Desktop */
 @media only screen and (min-width: 1023px) {
- 
-  /* Navigation */
-  /* 
-    First thing I noticed was the profile photo and chat icon were off in the nav container. 
-    the photo is closer to the edge of the container than the chat box. 
-    add padding to the parent and don't add margin to the children. 
-  */
   nav {
     width: 100%;
     max-height: 15vh;
@@ -380,9 +374,7 @@ footer h1 {
     justify-content: space-between;
     margin-top: .75em;
     background-color: rgba(7, 42, 64, 0.534);
-    /* navtop & navbottom will have equal distance away from the edge of the container */
-    /* chose 11px because it lines up with the container under it. */
-    padding: 0 11px;
+    padding: 0 20px;
   }
 
   .navtop {
@@ -397,16 +389,11 @@ footer h1 {
   }
 
   nav .navtop img {
-    /* while this works without a unit, i'd add one. px is default. */
-    margin: 7 0 0 10;
-    /* new margin */
     margin: 7px 0 0 0;
   }
 
   nav .navbottom {
     display: flex;
-    /* can remove now. since we're using the parents padding */
-    /* margin-right: 1.5em; */
     border: none;
   }
 
@@ -471,14 +458,17 @@ footer h1 {
 
   .aside .aside-nav ul li:nth-child(n+2):nth-last-child(n+8):hover {
     color: white;
+    cursor: pointer;
   }
 
   .aside .aside-nav ul li:nth-child(n+7):nth-last-child(n+4):hover {
     color: white;
+    cursor: pointer;
   }
 
   .aside .aside-nav ul li:nth-child(n+11):nth-last-child(n+1):hover {
     color: white;
+    cursor: pointer;
   }
 
   .aside .aside-nav ul li:first-of-type {
