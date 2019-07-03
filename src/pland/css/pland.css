@@ -1,0 +1,108 @@
+/* Global */
+
+:root {
+  --bground: #7E8495;
+  --bigc: #5B678C;
+  --mediumc: #41444D;
+  --smallc: #8595CC;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background: var(--bground);
+  overflow: hidden;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: grid; 
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(16, 1fr);
+  border: 1px solid red;
+}
+
+.left-33 {
+  border: 1px solid blue;
+  grid-column: 3 / 7;
+  grid-row: 5 / 10;
+  width: 400px;
+  height: 400px;
+}
+
+.circles {
+  position: relative;
+  padding: 50%;
+  width: 400px;
+  height: 400px;
+  border: 1px solid black;
+}
+
+.big-circle {
+  display: inline-block;
+  content: '';
+  position: absolute;
+  top: -.5%;
+  left: -.5%;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  opacity: 1;
+    -moz-transition: opacity 4s;
+    -webkit-transition: opacity 4s;
+    -o-transition: opacity 4s;
+    transition: opacity 4s;
+  background: #5B678C;
+  border: 1px solid green;
+}
+
+.loaded .big-circle {
+  opacity: 1;
+}
+
+.medium-circle {
+  margin-top: 17%;
+  margin-left: 17%;
+  position: absolute;
+  width: 66%;
+  height: 66%;
+  background-color: #41444D;
+  opacity: 0;
+    -moz-transition: opacity 4s;
+    -webkit-transition: opacity 4s;
+    -o-transition: opacity 4s;
+    transition: opacity 4s;
+  border-radius: 50%;
+}
+
+.loaded .medium-circle {
+  opacity: 1;
+  transition-delay: .75s;
+}
+
+.small-circle {
+  margin-top: 25%;
+  margin-left: 25%;
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background-color: #8595CC;
+  border-radius: 50%;
+  opacity: 0;
+    -moz-transition: opacity 3s;
+    -webkit-transition: opacity 3s;
+    -o-transition: opacity 3s;
+    transition: opacity 3s;
+  border-radius: 50%;
+}
+
+.loaded .small-circle {
+  opacity: 1;
+  transition-delay: 1.75s;
+}
+
+.right-66 {
+  width: 60%;
+  height: auto;
+}
