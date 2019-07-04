@@ -20,23 +20,21 @@ body {
   display: grid; 
   grid-template-columns: repeat(16, 1fr);
   grid-template-rows: repeat(16, 1fr);
-  border: 1px solid red;
 }
 
-.left-33 {
-  border: 1px solid blue;
+.circle-container {
   grid-column: 3 / 7;
-  grid-row: 5 / 10;
-  width: 400px;
-  height: 400px;
+  grid-row: 4 / 10;
+  width: 500px;
+  height: 500px;
+  margin-top: 18px;
 }
 
 .circles {
   position: relative;
   padding: 50%;
-  width: 400px;
-  height: 400px;
-  border: 1px solid black;
+  width: 500px;
+  height: 500px;
 }
 
 .big-circle {
@@ -45,16 +43,15 @@ body {
   position: absolute;
   top: -.5%;
   left: -.5%;
-  width: 400px;
-  height: 400px;
+  width: 500px;
+  height: 500px;
   border-radius: 50%;
-  opacity: 1;
+  opacity: 0;
     -moz-transition: opacity 4s;
     -webkit-transition: opacity 4s;
     -o-transition: opacity 4s;
-    transition: opacity 4s;
+  transition: opacity 4s;
   background: #5B678C;
-  border: 1px solid green;
 }
 
 .loaded .big-circle {
@@ -72,7 +69,7 @@ body {
     -moz-transition: opacity 4s;
     -webkit-transition: opacity 4s;
     -o-transition: opacity 4s;
-    transition: opacity 4s;
+  transition: opacity 4s;
   border-radius: 50%;
 }
 
@@ -93,7 +90,7 @@ body {
     -moz-transition: opacity 3s;
     -webkit-transition: opacity 3s;
     -o-transition: opacity 3s;
-    transition: opacity 3s;
+  transition: opacity 3s;
   border-radius: 50%;
 }
 
@@ -102,7 +99,29 @@ body {
   transition-delay: 1.75s;
 }
 
-.right-66 {
-  width: 60%;
-  height: auto;
+.centerline {
+  grid-column: 10 / 10;
+  grid-row: 9 / 10;
+  position: relative;
 }
+
+.line {
+  content: '';
+  width: 5px;
+  height: 100vh;
+  background: var(--mediumc);
+  position: absolute;
+  top: -800%;
+  opacity: 0;
+    -moz-transition: opacity 1s;
+    -webkit-transition: opacity 1s;
+    -o-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.loaded .line {
+  opacity: 1;
+  transition-delay: 2.50s;
+}
+
+
