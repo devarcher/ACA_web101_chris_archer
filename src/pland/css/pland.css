@@ -50,10 +50,10 @@ body {
   height: 300px;
   border-radius: 50%;
   opacity: 0;
-    -moz-transition: opacity 4s;
-    -webkit-transition: opacity 4s;
-    -o-transition: opacity 4s;
-    transition: opacity 4s;
+    -moz-transition: opacity 2.5s;
+    -webkit-transition: opacity 2.5s;
+    -o-transition: opacity 2.5s;
+    transition: opacity 2.5s;
   background: #5B678C;
 }
 
@@ -69,16 +69,16 @@ body {
   height: 66%;
   background-color: #41444D;
   opacity: 0;
-    -moz-transition: opacity 4s;
-    -webkit-transition: opacity 4s;
-    -o-transition: opacity 4s;
-    transition: opacity 4s;
+    -moz-transition: opacity 2.5s;
+    -webkit-transition: opacity 2.5s;
+    -o-transition: opacity 2.5s;
+    transition: opacity 2.5s;
   border-radius: 50%;
 }
 
 .loaded .medium-circle {
   opacity: 1;
-  transition-delay: .75s;
+  transition-delay: .5s;
 }
 
 .small-circle {
@@ -99,7 +99,7 @@ body {
 
 .loaded .small-circle {
   opacity: 1;
-  transition-delay: 1.75s;
+  transition-delay: 1s;
 }
 
 /* Center Line */
@@ -119,13 +119,13 @@ body {
 
 .loaded .centerline {
   opacity: 1;
-  transition-delay: 2.50s;
+  transition-delay: 1.5s;
 }
 
 /* Right Section */
 .right-section {
   grid-column: 10 / 16;
-  grid-row: 6 / 14;
+  grid-row: 7 / 14;
   width: 100%;
   height: 100%;
   display: grid;
@@ -141,7 +141,7 @@ body {
 
 .loaded .right-section {
   opacity: 1;
-  transition-delay: 2.50s;
+  transition-delay: 1.75s;
 }
 
 /* Name Box */
@@ -153,7 +153,7 @@ body {
 .name h1 {
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 600;
-  font-size: 3em;
+  font-size: 2.75em;
   color: var(--mediumc);
 }
 
@@ -185,9 +185,9 @@ hr {
 /* CIRCLE BTNS  */
 .orb {
   position: absolute;
-  width: 2.5%;
-  height: 2.5%;
-  padding: 2.5%;
+  width: 2.25%;
+  height: 2.25%;
+  padding: 2.25%;
    -webkit-border-radius: 50%;
       -moz-border-radius: 50%;
       border-radius: 50%;
@@ -219,11 +219,11 @@ hr {
 /* Section Names */
 .layer-1 {
   position: absolute;
-  top: 150%;
+  top: 135%;
   left: 1%;
   z-index: 1;
   opacity: 0;
-  font-size: 2em;
+  font-size: 1.75em;
 }
 
 .orb-1:hover {
@@ -236,11 +236,11 @@ hr {
 
 .layer-2 {
   position: absolute;
-  top: 150%;
-  left: -165%;
+  top: 135%;
+  left: -180%;
   z-index: 2;
   opacity: 0;
-  font-size: 2em;
+  font-size: 1.75em;
 }
 
 .orb-2:hover {
@@ -254,11 +254,11 @@ hr {
 
 .layer-3 {
   position: absolute;
-  top: 150%;
-  left: -330%;
+  top: 135%;
+  left: -370%;
   z-index: 3;
   opacity: 0;
-  font-size: 2em;
+  font-size: 1.75em;
 }
 
 .orb-3:hover {
@@ -272,11 +272,11 @@ hr {
 
 .layer-4 {
   position: absolute;
-  top: 150%;
-  left: -500%;
+  top: 135%;
+  left: -550%;
   z-index: 4;
   opacity: 0;
-  font-size: 2em;
+  font-size: 1.75em;
 }
 
 .orb-4:hover {
@@ -302,7 +302,7 @@ hr {
   .circle-container {
     grid-column: 3 / 8;
     grid-row: 6 / 14;
-    min-width: 15vw;
+    min-width: 30vw;
     min-height: 30vh;
     display: grid;
     justify-content: center;
@@ -332,18 +332,22 @@ hr {
   /* Center Line */
   .centerline {
     grid-column: 10 / 11;
-    grid-row: 6 / 14;
+    grid-row: 5 / 16
   }
 
 /* Right Section */
-  .right-section {
+  .wrapper .right-section {
     grid-column: 11 / 18;
-    grid-row: 7 / 14;
+    grid-row: 5 / 14;
     margin-left: 10px;
-  }
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 4fr;
+    font-size: .9em;
+}
 
-  .right-section h1 {
-    font-size: 2rem;
+  .right-section .name {
+    grid-row: 1 / 2;  
   }
 
   .right-section p {
@@ -351,14 +355,88 @@ hr {
   }
 
 /* Orbs */
+  .right-section .btn-box {
+    grid-row: 2 / -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+
   .orb {
     position: absolute;
-    width: 3%;
-    height: 3%;
-    padding: 3%;
-    -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
+    width: 2.25%;
+    height: 2.25%;
+    padding: 2.25%;
+       -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
         border-radius: 50%;
     background: var(--bigc);
-    } 
+    display: flex;
+    align-items: center;
+  } 
+
+/* Section Names */
+  .layer-1 {
+    position: unset;
+    opacity: 1;
+    font-size: 1.5em;
+    margin-left: 40px;
+  }
+
+  .projects:hover {
+    cursor: pointer;
+  }
+
+  .orb-1:hover > .layer-1 {
+    opacity: 1;
+  }
+
+  .layer-2 {
+    position: unset;
+    opacity: 1;
+    font-size: 1.5em;
+    margin-left: 40px;
+  }
+
+  .resume:hover {
+    cursor: pointer;
+  }
+
+  .orb-2:hover > .layer-2 {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  .layer-3 {
+    position: unset;
+    opacity: 1;
+    font-size: 1.5em;
+    margin-left: 40px;
+  }
+
+  .about:hover {
+    cursor: pointer;
+  }
+
+  .orb-3:hover > .layer-3 {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  .layer-4 {
+    position: unset;
+    opacity: 1;
+    font-size: 1.5em;
+    margin-left: 40px;
+  }
+
+  .contact:hover {
+    cursor: pointer;
+  }
+
+  .orb-4:hover > .layer-4 {
+    opacity: 1; 
+    cursor: pointer;
+  }
 }
