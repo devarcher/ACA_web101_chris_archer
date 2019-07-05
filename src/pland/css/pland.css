@@ -26,7 +26,6 @@ body {
   grid-template-rows: repeat(18, 1fr);
 }
 
-
 /* Circles */
 .circle-container {
   grid-column: 4 / 7;
@@ -131,7 +130,7 @@ body {
   height: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   justify-items: start;
   opacity: 0;
     -moz-transition: opacity 1s;
@@ -154,7 +153,7 @@ body {
 .name h1 {
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 600;
-  font-size: 2.5em;
+  font-size: 3em;
   color: var(--mediumc);
 }
 
@@ -174,7 +173,7 @@ hr {
 }
 
 /* Circle Box */
-.newbox {
+.btn-box {
   width: 100%;
   font-family: 'Roboto', sans-serif;
   font-size: 1.25em;
@@ -199,5 +198,96 @@ hr {
   background: var(--smallc);
   box-shadow: 0 0 0 6px rgba(65,68,77,0.5);
 }
+
+/* SubSections */
+.projects {
+  display: flex;
+}
+
+.resume {
+  display: flex;
+}
+
+.about {
+  display: flex;
+}
+
+.contact {
+  display: flex;
+}
+
+
+/* Section Names */
+.layer-1 {
+  position: absolute;
+  top: 150%;
+  left: 1%;
+  z-index: 1;
+  opacity: 0;
+  font-size: 2em;
+}
+
+.orb-1:hover {
+  cursor: pointer;
+}
+
+.orb-1:hover > .layer-1 {
+  opacity: 1;
+}
+
+.layer-2 {
+  position: absolute;
+  top: 150%;
+  left: -165%;
+  z-index: 2;
+  opacity: 0;
+  font-size: 2em;
+}
+
+.orb-2:hover {
+  cursor: pointer;
+}
+
+.orb-2:hover > .layer-2 {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.layer-3 {
+  position: absolute;
+  top: 150%;
+  left: -330%;
+  z-index: 3;
+  opacity: 0;
+  font-size: 2em;
+}
+
+.orb-3:hover {
+  cursor: pointer;
+}
+
+.orb-3:hover > .layer-3 {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.layer-4 {
+  position: absolute;
+  top: 150%;
+  left: -500%;
+  z-index: 4;
+  opacity: 0;
+  font-size: 2em;
+}
+
+.orb-4:hover {
+  cursor: pointer;
+}
+
+.orb-4:hover > .layer-4 {
+  opacity: 1; 
+  cursor: pointer;
+}
+
 
 
