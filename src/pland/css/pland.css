@@ -289,7 +289,7 @@ hr {
 }
 
 /* Tablet Media Query */
-@media all and (max-width:1199px) and (min-width: 767px) {
+@media all and (max-width:1199px) and (min-width: 768px) {
   .wrapper {
     width: 100vw;
     height: 100vh;
@@ -344,7 +344,7 @@ hr {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 4fr;
     font-size: .9em;
-}
+  }
 
   .right-section .name {
     grid-row: 1 / 2;  
@@ -438,5 +438,236 @@ hr {
   .orb-4:hover > .layer-4 {
     opacity: 1; 
     cursor: pointer;
+  }
+}
+
+/* Mobile Media Query */
+@media all and (max-width:767px) {
+  body {
+    height: 100%;
+    width: 100%;
+    background: var(--bground);
+    overflow: visible;
+  }
+
+  .wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: grid; 
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+  }
+
+  /* Circles */
+  .circle-container {
+    grid-column: 3 / 9;
+    grid-row: 1 / 5;
+    min-width: 30vw;
+    min-height: 30vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .circles {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: #7E8495;
+  }
+
+  .big-circle {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    opacity: 0;
+      -moz-transition: opacity 2.5s;
+      -webkit-transition: opacity 2.5s;
+      -o-transition: opacity 2.5s;
+      transition: opacity 2.5s;
+    background: #5B678C;
+  }
+
+  .loaded .big-circle {
+    opacity: 1;
+  }
+
+  .medium-circle {
+    margin-top: 17%;
+    margin-left: 17%;
+    position: absolute;
+    width: 66%;
+    height: 66%;
+    background-color: #41444D;
+    opacity: 0;
+      -moz-transition: opacity 2.5s;
+      -webkit-transition: opacity 2.5s;
+      -o-transition: opacity 2.5s;
+      transition: opacity 2.5s;
+    border-radius: 50%;
+  }
+
+  .loaded .medium-circle {
+    opacity: 1;
+    transition-delay: .5s;
+  }
+
+  .small-circle {
+    margin-top: 25%;
+    margin-left: 25%;
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background-color: #8595CC;
+    border-radius: 50%;
+    opacity: 0;
+      -moz-transition: opacity 3s;
+      -webkit-transition: opacity 3s;
+      -o-transition: opacity 3s;
+      transition: opacity 3s;
+    border-radius: 50%;
+  }
+
+  .loaded .small-circle {
+    opacity: 1;
+    transition-delay: 1s;
+  }
+
+  /* Center Line */
+  .centerline {
+    grid-column: 1 / -1;
+    grid-row: 5 / 5;
+    width: 100%;
+    height: 10px;
+    border-top: 3px solid var(--mediumc);
+    border-left: 0;
+    opacity: 0;
+      -moz-transition: opacity 1s;
+      -webkit-transition: opacity 1s;
+      -o-transition: opacity 1s;
+      transition: opacity 1s;
+  }
+
+  .loaded .centerline {
+    opacity: 1;
+    transition-delay: 1.5s;
+  }
+
+  /* Right Section */
+  .right-section {
+    grid-column: 2 / 9;
+    grid-row: 5 / 11;
+    margin-left: 10px;  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5fr;
+    font-size: .75em;
+    margin-top: 45px;
+    justify-items: start;
+    }
+
+  .right-section .name hr {
+    border: 0;
+    grid-column: 1 / 2;
+    margin-top: -3px;
+    height: 3px;
+    width: 100%;
+    background: var(--mediumc);
+  } 
+
+  .right-section p {
+    font-size: .9rem;
+  }
+
+/* Orbs */
+  .right-section .btn-box {
+    grid-row: 2 / -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+
+  .orb {
+    position: absolute;
+    width: 5%;
+    height: 5%;
+    padding: 5%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+        border-radius: 50%;
+    background: var(--bigc);
+    display: flex;
+    align-items: center;
+  } 
+
+/* Section Names */
+  .layer-1 {
+    position: unset;
+    opacity: 1;
+    font-size: 1.5em;
+    margin-left: 40px;
+  }
+
+  .projects:hover {
+    cursor: pointer;
+  }
+
+  .orb-1:hover > .layer-1 {
+    opacity: 1;
+  }
+
+  .layer-2 {
+    position: unset;
+    opacity: 1;
+    font-size: 1.5em;
+    margin-left: 40px;
+  }
+
+  .resume:hover {
+    cursor: pointer;
+  }
+
+  .orb-2:hover > .layer-2 {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  .layer-3 {
+    position: unset;
+    opacity: 1;
+    font-size: 1.5em;
+    margin-left: 40px;
+  }
+
+  .about:hover {
+    cursor: pointer;
+  }
+
+  .orb-3:hover > .layer-3 {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  .layer-4 {
+    position: unset;
+    opacity: 1;
+    font-size: 1.5em;
+    margin-left: 40px;
+  }
+
+  .contact:hover {
+    cursor: pointer;
+  }
+
+  .orb-4:hover > .layer-4 {
+    opacity: 1; 
+    cursor: pointer;
+  }
+
+  .spacer {
+    width: 100%;
+    height: 75px;
   }
 }
