@@ -13,7 +13,7 @@ body {
 .wrapper {
   background: url(./img/jedidog.jpg) no-repeat;
   background-size: cover;
-  background-color: #627760;
+  background-color: #6f816f;
   background-blend-mode: multiply;
   height: 100vh;
   width: 100vw; 
@@ -70,14 +70,14 @@ nav ul li {
   color: rgba(255, 255, 255, 1);
   text-shadow: 0 1px 1px rgba(128,128,128.05);
   max-width: 45vw;
-  margin-left: 35px;
+  margin-left: 55px;
 }
 
 .text p {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 2em;
   max-width: 45vw;
-  margin: 35px;
+  margin: 55px;
   color: rgba(255, 255, 255, 05);
 }
 
