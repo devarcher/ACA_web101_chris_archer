@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wrapper {
+  background: url(./img/jedidog.jpg) no-repeat;
+  background-size: cover;
+  background-color: #627760;
+  background-blend-mode: multiply;
+  height: 100vh;
+  width: 100vw; 
+  display: grid;
+}
+
+nav {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  border-bottom: 3px solid #4272ad;
+}
+
+nav h1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 2em;
+  font-weight: 600;
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.25em;
+  color: white;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: calc(100vh - 150px);
+}
+
+.text {
+  width: 100vw;
+  height: calc(65vh - 75px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text h1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 4.5em;
+  color: rgba(255, 255, 255, 1);
+  text-shadow: 0 1px 1px rgba(128,128,128.05);
+  max-width: 45vw;
+  margin-left: 35px;
+}
+
+.text p {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 2em;
+  max-width: 45vw;
+  margin: 35px;
+  color: rgba(255, 255, 255, 05);
+}
+
+.btns {
+  width: 50vw;
+  height: calc(50vh - 150px);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.learn {
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 10px 25px 10px 25px;
+  margin-right: 15px; 
+}
+
+.start {
+  color: white;
+  background: linear-gradient(to left, hsl(239, 35%, 40%) 0%, rgb(61, 133, 85) 100%);
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 10px 25px 10px 25px;
+  margin-left: 15px; 
+}
+
+
+
