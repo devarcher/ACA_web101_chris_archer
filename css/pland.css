@@ -188,9 +188,9 @@ hr {
 /* CIRCLE BTNS  */
 .orb {
   position: absolute;
-  width: 2.25%;
-  height: 2.25%;
-  padding: 2.25%;
+  width: 30%;
+  height: 30%;
+  padding: 30%;
    -webkit-border-radius: 50%;
       -moz-border-radius: 50%;
       border-radius: 50%;
@@ -202,29 +202,33 @@ hr {
   box-shadow: 0 0 0 6px rgba(65,68,77,0.5);
 }
 
-.layer-1 {
+.thing {
   position: relative;
-  top: 100%;
+}
+
+.layer-1 {
+  position: absolute;
+  top: 105%;
   opacity: 0;
 }
 
 .layer-2 {
-  position: relative;
-  top: 100%;
+  position: absolute;
+  top: 105%;
   left: -100%;
   opacity: 0;
 }
 
 .layer-3 {
-  position: relative;
-  top: 100%;
+  position: absolute;
+  top: 105%;
   left: -200%;
   opacity: 0;
 }
 
 .layer-4 {
-  position: relative;
-  top: 100%;
+  position: absolute;
+  top: 105%;
   left: -300%;
   opacity: 0;
 }
