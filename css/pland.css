@@ -26,6 +26,15 @@ body {
   grid-template-rows: repeat(18, 1fr);
 }
 
+a {
+  text-decoration: none;
+  color: var(--mediumc);
+}
+
+a:visited {
+  color: var(--mediumc);
+}
+
 /* Circles */
 .circle-container {
   grid-column: 4 / 8;
@@ -273,7 +282,7 @@ hr {
 .layer-4 {
   position: absolute;
   top: 135%;
-  left: -550%;
+  left: -555%;
   z-index: 4;
   opacity: 0;
   font-size: 1.75em;
@@ -285,7 +294,26 @@ hr {
 
 .orb-4:hover > .layer-4 {
   opacity: 1; 
-  cursor: pointer;
+}
+
+.orb-1 .layer-1:hover {
+  cursor: default;
+  opacity: 0;
+}
+
+.orb-2 .layer-2:hover {
+  cursor: default;
+  opacity: 0;
+}
+
+.orb-3 .layer-3:hover {
+  cursor: default;
+  opacity: 0;
+}
+
+.orb-4 .layer-4:hover {
+  cursor: default;
+  opacity: 0;
 }
 
 /* Tablet Media Query */
@@ -439,6 +467,7 @@ hr {
     opacity: 1; 
     cursor: pointer;
   }
+
 }
 
 /* Mobile Media Query */
