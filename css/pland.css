@@ -303,9 +303,12 @@ hr {
   opacity: 1;
 }
 
+.spacer {
+  display: none;
+}
 
-/* Mobile Media Query */
-@media all and (max-width:599px) {
+/* Small Mobile Media Query */
+@media all and (max-width:600px) {
   body {
     height: 100vh;
     width: 100vw;
@@ -447,7 +450,7 @@ hr {
   }
 
   .name h1 {
-    color: var(--smallc);
+    color: #D9E2FF;
   }
 
   .name hr {
@@ -455,7 +458,7 @@ hr {
   }
 
   .name p {
-    color: var(--smallc);
+    color: #D9E2FF;
   }
 
   /* Button Box - Horizontal elements  */
@@ -500,6 +503,7 @@ hr {
     grid-row: 1 / 2;
     justify-self: center;
     align-self: center;
+    color: rgb(207, 207, 207);
   }
 
   .res {
@@ -523,6 +527,7 @@ hr {
     grid-row: 1 / 2;
     justify-self: center;
     align-self: center;
+    color: rgb(207, 207, 207);
   }
 
   .ab {
@@ -546,7 +551,7 @@ hr {
     grid-row: 1 / 2;
     justify-self: center;
     align-self: center;
-    color: #7483B3;
+    color: rgb(207, 207, 207);
   }
 
   .cont {
@@ -570,13 +575,20 @@ hr {
     grid-row: 1 / 2;
     justify-self: center;
     align-self: center;
-    color: var(--smallc);
+    color: rgb(207, 207, 207);
   }
 
   .spacer {
     width: 100%;
     height: 100%;
     background: #32384D;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .spacer i {
+    color: rgba(221, 217, 255, 0.815);
   }
 
   /* Buttons Color Stagger */
@@ -645,8 +657,363 @@ hr {
     transition-delay: 1.45s;
   }
 
-  /* Button Text */
+    /* Spacer Buttons  */
+  .spacer i:hover {
+    cursor: pointer;
+  } 
+}
 
+@media all and (min-width:601px) and (max-width:1024px) {
+  body {
+    height: 100vh;
+    width: 100vw;
+    background: var(--bground);
+    overflow: hidden;
+  }
 
+  .wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: grid; 
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    justify-content: center;
+    align-items: center;
+    background: var(--bground);
+    transition: background 1s ease;
+  }
 
+  .loaded .wrapper {
+    background: #32384D;
+    transition-delay: 2.7s;
+  }
+
+  /* Circles */
+  .circle-container {
+    grid-column: 3 / 11;
+    grid-row: 2 / 8;
+    min-width: 25vw;
+    min-height: 25vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .circles {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background: var(--bground);
+    transition: background 1s ease;
+  }
+
+  .loaded .circles {
+    background: #32384D;
+    transition-delay: 2.7s;
+  }
+
+  .big-circle {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    opacity: 0;
+      -moz-transition: opacity 2.5s;
+      -webkit-transition: opacity 2.5s;
+      -o-transition: opacity 2.5s;
+      transition: opacity 2.5s;
+    background: #5B678C;
+  }
+
+  .loaded .big-circle {
+    opacity: 1;
+  }
+
+  .medium-circle {
+    margin-top: 17%;
+    margin-left: 17%;
+    position: absolute;
+    width: 66%;
+    height: 66%;
+    background-color: #41444D;
+    opacity: 0;
+      -moz-transition: opacity 2.5s;
+      -webkit-transition: opacity 2.5s;
+      -o-transition: opacity 2.5s;
+      transition: opacity 2.5s;
+    border-radius: 50%;
+  }
+
+  .loaded .medium-circle {
+    opacity: 1;
+    transition-delay: .5s;
+  }
+
+  .small-circle {
+    margin-top: 25%;
+    margin-left: 25%;
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background-color: #8595CC;
+    border-radius: 50%;
+    opacity: 0;
+      -moz-transition: opacity 3s;
+      -webkit-transition: opacity 3s;
+      -o-transition: opacity 3s;
+      transition: opacity 3s;
+    border-radius: 50%;
+  }
+
+  .loaded .small-circle {
+    opacity: 1;
+    transition-delay: 1s;
+  }
+
+  .centerline {
+    display: none;
+  }
+
+  /* Bottom Section */
+  .right-section {
+    grid-column: 1 / -1;
+    grid-row: 9 / -1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    align-items: start;
+  }
+
+  /* Name - Chris Archer - Web Development */
+  .name {
+    font-size: .75em;
+    justify-self: center;
+    align-self: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    -moz-transition: opacity 1s;
+    -webkit-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+  }
+
+  .loaded .name {
+    opacity: 1;
+    transition-delay: 2.5s;
+  }
+
+  .name h1 {
+    color: #D9E2FF;
+  }
+
+  .name hr {
+    display: none;
+  }
+
+  .name p {
+    color: #D9E2FF;
+  }
+
+  /* Button Box - Horizontal elements  */
+  .btn-box {
+    width: 100%;
+    height: 100%;
+    grid-row: 2 / -1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+  }
+
+  /* Disabling Orb-Style Desktop Buttons */
+  .orb {
+    all: initial;
+    all: unset;
+  }
+
+  /* Mobile Buttons */
+  .thing {
+    position: unset;
+  }
+
+  .port {
+    background: var(--smallc);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .port .a1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    width: 100%;
+    height: 100%;
+  }
+
+  .port .layer-1 {
+    all: initial;
+    all: unset;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    justify-self: center;
+    align-self: center;
+    color: rgb(207, 207, 207);
+  }
+
+  .res {
+    background: #637199;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .res .a2 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    width: 100%;
+    height: 100%;
+  }
+
+  .res .layer-2 {
+    all: initial;
+    all: unset;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    justify-self: center;
+    align-self: center;
+    color: rgb(207, 207, 207);
+  }
+
+  .ab {
+    background: var(--bigc);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .ab .a3 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    width: 100%;
+    height: 100%;
+  }
+
+  .ab .layer-3 {
+    all: initial;
+    all: unset;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    justify-self: center;
+    align-self: center;
+    color: rgb(207, 207, 207);
+  }
+
+  .cont {
+    background: #4B5573;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .cont .a4 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    width: 100%;
+    height: 100%;
+  }
+
+  .cont .layer-4 {
+    all: initial;
+    all: unset;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    justify-self: center;
+    align-self: center;
+    color: rgb(207, 207, 207);
+  }
+
+  .spacer {
+    width: 100%;
+    height: 100%;
+    background: #32384D;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .spacer i {
+    color: rgba(221, 217, 255, 0.815);
+  }
+
+  /* Buttons Color Stagger */
+  .port {
+    opacity: 0;
+    -moz-transition: opacity 1s;
+    -webkit-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+  }
+
+  .loaded .port {
+    opacity: 1;
+    transition-delay: 2.25s;
+  }
+
+  .res {
+    opacity: 0;
+      -moz-transition: opacity 1s;
+      -webkit-transition: opacity 1s;
+      -o-transition: opacity 1s;
+      transition: opacity 1s;
+    }
+
+  .loaded .res {
+    opacity: 1;
+    transition-delay: 2.05s;
+  }
+
+  .ab {
+    opacity: 0;
+      -moz-transition: opacity 1s;
+      -webkit-transition: opacity 1s;
+      -o-transition: opacity 1s;
+      transition: opacity 1s;
+  }
+
+  .loaded .ab {
+    opacity: 1;
+    transition-delay: 1.85s;
+  }
+
+  .cont {
+    opacity: 0;
+      -moz-transition: opacity 1s;
+      -webkit-transition: opacity 1s;
+      -o-transition: opacity 1s;
+      transition: opacity 1s;
+  }
+
+  .loaded .cont {
+    opacity: 1;
+    transition-delay: 1.65s;
+  }
+
+  .spacer {
+    opacity: 0;
+      -moz-transition: opacity 1s;
+      -webkit-transition: opacity 1s;
+      -o-transition: opacity 1s;
+      transition: opacity 1s;
+  }
+
+  .loaded .spacer {
+    opacity: 1;
+    transition-delay: 1.45s;
+  }
+
+    /* Spacer Buttons  */
+  .spacer i:hover {
+    cursor: pointer;
+  } 
 }
