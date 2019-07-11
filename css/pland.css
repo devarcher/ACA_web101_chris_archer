@@ -254,7 +254,6 @@ hr {
   transition-delay: 2.05s;
 }
 
-
 /* Link Names + Reveal */
 .thing {
   position: relative;
@@ -269,38 +268,40 @@ hr {
 .layer-2 {
   position: absolute;
   top: 105%;
-  left: -100%;
   opacity: 0;
 }
 
 .layer-3 {
   position: absolute;
   top: 105%;
-  left: -200%;
   opacity: 0;
 }
 
 .layer-4 {
   position: absolute;
   top: 105%;
-  left: -300%;
   opacity: 0;
 }
 
-.a1:hover + .layer-1 {
+.a1:hover > .layer-1 {
   opacity: 1;
 }
 
-.a2:hover + .layer-2 {
+.a2:hover > .layer-2 {
   opacity: 1;
 }
 
-.a3:hover + .layer-3 {
+.a3:hover > .layer-3 {
   opacity: 1;
 }
 
-.a4:hover + .layer-4 {
+.a4:hover > .layer-4 {
   opacity: 1;
+}
+
+a {
+  text-decoration: none;
+  color: var(--mediumc);
 }
 
 .spacer {
@@ -309,6 +310,15 @@ hr {
 
 /* Small Mobile Media Query */
 @media all and (max-width:600px) {
+    /* Disabling Orb-Style Desktop Buttons */ 
+  .orb {
+    display: none;
+  }
+
+  .loaded .orb {
+      display: none;
+  }
+
   body {
     height: 100vh;
     width: 100vw;
@@ -459,6 +469,7 @@ hr {
 
   .name p {
     color: #D9E2FF;
+    font-size: 1.25em;
   }
 
   /* Button Box - Horizontal elements  */
@@ -469,12 +480,6 @@ hr {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, 1fr);
-  }
-
-  /* Disabling Orb-Style Desktop Buttons */
-  .orb {
-    all: initial;
-    all: unset;
   }
 
   /* Mobile Buttons */
@@ -490,6 +495,9 @@ hr {
   }
 
   .port .a1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     width: 100%;
@@ -514,6 +522,9 @@ hr {
   }
 
   .res .a2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     width: 100%;
@@ -538,6 +549,9 @@ hr {
   }
 
   .ab .a3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     width: 100%;
@@ -562,6 +576,9 @@ hr {
   }
 
   .cont .a4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     width: 100%;
@@ -664,6 +681,15 @@ hr {
 }
 
 @media all and (min-width:601px) and (max-width:1024px) {
+      /* Disabling Orb-Style Desktop Buttons */ 
+  .orb {
+    display: none;
+  }
+
+  .loaded .orb {
+    display: none;
+  }
+  
   body {
     height: 100vh;
     width: 100vw;
@@ -806,6 +832,7 @@ hr {
 
   .name h1 {
     color: #D9E2FF;
+    font-size: 3.5em;
   }
 
   .name hr {
@@ -814,6 +841,7 @@ hr {
 
   .name p {
     color: #D9E2FF;
+    font-size: 1.5em;
   }
 
   /* Button Box - Horizontal elements  */
@@ -824,12 +852,6 @@ hr {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, 1fr);
-  }
-
-  /* Disabling Orb-Style Desktop Buttons */
-  .orb {
-    all: initial;
-    all: unset;
   }
 
   /* Mobile Buttons */
@@ -845,6 +867,9 @@ hr {
   }
 
   .port .a1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     width: 100%;
@@ -869,6 +894,9 @@ hr {
   }
 
   .res .a2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     width: 100%;
@@ -893,6 +921,9 @@ hr {
   }
 
   .ab .a3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     width: 100%;
@@ -917,6 +948,9 @@ hr {
   }
 
   .cont .a4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     width: 100%;
