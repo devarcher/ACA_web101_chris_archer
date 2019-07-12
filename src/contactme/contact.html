@@ -27,12 +27,15 @@
         <i class="fas fa-bars"></i>
       </nav>
 
+      <hr>
+
       <div class="main">
-        <h1>Say Hello</h1>
+        <h1>Say Hello!</h1>
           <form action="#" class="form_wrapper" name="contact_form"> 
           <input name="full_name" type="text" required placeholder="Your Name"/>
           <br>
-          
+          <input name="email" type="email" required placeholder="Your Email"/>
+          <br>
           <fieldset class="ninjas">
             <legend>I am a:</legend>
 
@@ -42,16 +45,22 @@
             <input type="radio" id="ninja" name="character">
             <label for="ninja">Ninja</label><br>
           </fieldset>
-
-          <input name="email" type="email" required placeholder="you@domain.com"/>
           <br>
-          <textarea name="message" cols="30" rows="10" placeholder="Enter your message here ..." required> </textarea>
-            
+          <label>Message:</label>
+          <textarea name="message" cols="30" rows="10" placeholder="Enter Message Here..."> </textarea>
+          <br>
           <div class="center">
             <input type="submit" value="Submit">
           </div>
 	        </form>
       </div>
     </div>
+    <footer>
+      <a href="https://www.linkedin.com/in/devarcher/" target="_blank">
+      <i class="fab fa-linkedin"></i></a>
+
+      <a href="https://github.com/devarcher" target="_blank">
+      <i class="fab fa-github-square"></i></a>
+    </footer>
   </body>
 </html>
