@@ -314,6 +314,11 @@ footer i {
     margin-right: 25px;
   }
 
+  .nav-desktop a:hover {
+    color: var(--bground);
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  }
+
   /* Main Desktop */
   .main-desktop {
     width: 100%;
@@ -463,6 +468,10 @@ footer i {
       -webkit-transition: opacity 1.5s;
       -o-transition: opacity 1.5s;
       transition: opacity 1.5s;
+  }
+
+  footer i:hover {
+    color: var(--mediumc);
   }
 
   .loaded footer i {
