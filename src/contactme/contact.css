@@ -9,23 +9,31 @@ font-family: 'Roboto', sans-serif;
   --mediumc: #41444D;
   --smallc: #8595CC;
 }
-
-html {
-  height: calc(100vh - 150px);
-  width: 100vw;
+  
+body {
+  width: 100%;
+  height: 100vh;
   background: var(--bground);
 }
 
-.wrapper {
+.wrapper-small {
   width: 100vw;
-  height: 100vh;
   background: linear-gradient(120deg, #32384D 0%, var(--smallc) 100%);
 }
+
+/* Hidden Layer */
+  .nav-desktop {
+    display: none;
+  }
+
+  .main-desktop {
+    display: none;
+  }
 
 /* Transparent Navigation */
 nav {
   width: 100vw;
-  height: 75px;
+  height: 90px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -122,9 +130,9 @@ hr {
   border: 1px solid #637199;
 }
 
-.main {
+.main-small {
   width: 100vw;
-  height: calc(100vh - 150px);
+  height: 105vh;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 8fr;
@@ -133,15 +141,9 @@ hr {
   justify-content: center;
 }
 
-.main h1 {
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 2.5em;
-  color: rgba(207, 207, 207.85);
-}
-
 .form_wrapper {
   width: 80%;
-  height: 70vh;
+  height: 100vh;
   padding: 30px;
   display: flex;
   flex-direction: column;
@@ -150,6 +152,15 @@ hr {
   border-radius: 10px;
   font-family: 'Roboto', sans-serif;
   font-size: 1em;
+  margin-top: 15px;
+}
+
+.form_wrapper h1 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.5em;
+  align-self: center;
+  color: rgba(207, 207, 207.85);
+  margin-bottom: 10px;
 }
 
 .form_wrapper input[type=text] {
@@ -176,12 +187,21 @@ hr {
   padding-bottom: 15px;
   border: 1px solid black;
   border-radius: 8px;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
 }
 
 .ninjas legend {
-  padding: 3px 5px;
+  padding: 3px 8px;
   border: 1px solid black;
   border-radius: 8px;
+  margin-left: 8px;
+}
+
+.ninjas label {
+  margin-right: 20px;
+  margin-left: 5px;
 }
 
 .form_wrapper textarea {
@@ -214,3 +234,239 @@ footer i {
   font-size: 1.2em;
 }
 
+
+/* Desktop Sizes */
+@media all and (min-width: 1025px) {
+  :root {
+  --bground: #7E8495;
+  --bigc: #5B678C;
+  --mediumc: #41444D;
+  --smallc: #8595CC;
+  }
+
+  body {
+    height: 100%;
+    width: 100%;
+    background: var(--bground);
+    overflow: hidden;
+  }
+
+  /* Hidden Sections */
+  .wrapper-small nav {
+    display: none;
+  } 
+
+  .main-small {
+    display: none;
+  }
+
+  /* Navigation - Desktop */
+  .nav-desktop {
+    width: 100vw;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-desktop .name {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    justify-self: center;
+    margin-left: 25px;
+    animation-delay: 2s;
+    animation-duration: 2s;
+  }
+
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translate3d(100px, 0, 0);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  .nav-desktop .nav-right {
+    display: flex;
+    animation-delay: 2s;
+    animation-duration: 2s;
+  }
+
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translate3d(-100px, 0, 0);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  .nav-desktop a {
+    text-decoration: none;
+    color: #32384D;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.75em;
+    margin-right: 25px;
+  }
+
+  /* Main Desktop */
+  .main-desktop {
+    width: 100%;
+    height: calc(80vh);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    justify-content: center;
+    align-items: center;  
+  }
+
+  /* Circles Desktop */
+  .circle-container {
+    grid-column: 2 /6;
+    grid-row: 4 / 9;
+    min-width: 30vw;
+    min-height: 30vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .circles {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: transparent;
+  }
+
+  .big-circle {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    opacity: 0;
+      -moz-transition: opacity 2.5s;
+      -webkit-transition: opacity 2.5s;
+      -o-transition: opacity 2.5s;
+      transition: opacity 2.5s;
+    background: #5B678C;
+  }
+
+  .loaded .big-circle {
+    opacity: 1;
+  }
+
+  .medium-circle {
+    margin-top: 17%;
+    margin-left: 17%;
+    position: absolute;
+    width: 66%;
+    height: 66%;
+    background-color: #41444D;
+    opacity: 0;
+      -moz-transition: opacity 2.5s;
+      -webkit-transition: opacity 2.5s;
+      -o-transition: opacity 2.5s;
+      transition: opacity 2.5s;
+    border-radius: 50%;
+  }
+
+  .loaded .medium-circle {
+    opacity: 1;
+    transition-delay: .625s;
+  }
+
+  .small-circle {
+    margin-top: 25%;
+    margin-left: 25%;
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background-color: #8595CC;
+    border-radius: 50%;
+    opacity: 0;
+      -moz-transition: opacity 3s;
+      -webkit-transition: opacity 3s;
+      -o-transition: opacity 3s;
+      transition: opacity 3s; 
+  }
+
+  .loaded .small-circle {
+    opacity: 1;
+    transition-delay: 1.25s;
+  }
+
+  .ninjas label {
+    margin-right: 50px;
+    margin-left: 5px;
+  }
+
+  .form_wrapper {
+    grid-column: 7 / 11;
+    grid-row: 1 / -1;
+    width: 100%;
+    height: 80%;
+    padding: 30px;
+    opacity: 0;
+      -moz-transition: opacity 1.5s;
+      -webkit-transition: opacity 1.5s;
+      -o-transition: opacity 1.5s;
+      transition: opacity 1.5s;
+  }
+
+  .loaded .form_wrapper {
+    opacity: 1;
+    transition-delay: 1.75s;
+  }
+
+  .form_wrapper h1 {
+    color: #32384D;
+  }
+
+  .center input[type=submit] {
+    transition: ease-in .2s;
+  }
+
+  .center input[type=submit]:hover {
+    transform: scale3d(1.1, 1.1, 1.1);
+    background: linear-gradient(120deg, var(--bigc) 0%, var(--smallc) 100%);
+    box-shadow: 0px 2px 15px 1px rgb(92, 92, 107);
+  }
+
+  footer {
+    width: 100vw;
+    height: 75px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 0;
+      -moz-transition: opacity 1.5s;
+      -webkit-transition: opacity 1.5s;
+      -o-transition: opacity 1.5s;
+      transition: opacity 1.5s;
+  }
+
+  .loaded footer {
+    opacity: 1;
+    transition-delay: 1.75s;
+  }
+
+  footer i {
+    color: rgb(219, 219, 219);
+    font-size: 1.75em;
+    opacity: 0;
+      -moz-transition: opacity 1.5s;
+      -webkit-transition: opacity 1.5s;
+      -o-transition: opacity 1.5s;
+      transition: opacity 1.5s;
+  }
+
+  .loaded footer i {
+    opacity: 1;
+    transition-delay: 1.75s;
+  }
+}

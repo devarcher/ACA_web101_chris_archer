@@ -6,12 +6,15 @@
   <link rel="stylesheet" href="./reset.css">
   <script src="https://kit.fontawesome.com/c9667fd976.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600|Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./animate.css">
   <link rel="stylesheet" href="./contact.css">
   <title>Contact</title>
 </head>
 
   <body onload="document.body.className += ' loaded';">
-    <div class="wrapper">
+    
+    <!-- Mobile / Nav Wrapper -->
+    <div class="wrapper-small">
       <nav>
         <a href="../../index.html">
         <div class="circle-container">
@@ -27,23 +30,43 @@
         <i class="fas fa-bars"></i>
       </nav>
 
-      <hr>
+      <!-- Desktop Nav -->
+      <div class="nav-desktop">
+        <h1 class="name animated fadeInRight">Chris Archer</h1>
+        <div class="nav-right animated fadeInLeft">
+          <a href="#" target="_blank">
+            <h1>Home</h1>
+          </a>
+          <a href="#" target="_blank">
+            <h1>Projects</h1>
+          </a>
+          <a href="#" target="_blank">
+            <h1>Resume</h1>
+          </a>
+          <a href="#" target="_blank">
+            <h1>About</h1>
+          </a>
+        </div>
+    </div>
+    <hr>
 
-      <div class="main">
-        <h1>Say Hello!</h1>
+      <!-- Mobile Forms / Main Layout  -->
+      <div class="main-small">
           <form action="#" class="form_wrapper" name="contact_form"> 
-          <input name="full_name" type="text" required placeholder="Your Name"/>
+          <h1>Say Hello!</h1>
+          <input name="full_name" type="text" required placeholder="Name"/>
           <br>
-          <input name="email" type="email" required placeholder="Your Email"/>
+          <input name="email" type="email" required placeholder="Email"/>
           <br>
           <fieldset class="ninjas">
             <legend>I am a:</legend>
 
             <input type="radio" id="pirate" name="character">
-            <label for="pirate">Pirate</label><br>
-
+            <label for="pirate">Pirate</label>
+            <div class="check"></div>
             <input type="radio" id="ninja" name="character">
             <label for="ninja">Ninja</label><br>
+            <div class="check2"></div>
           </fieldset>
           <br>
           <label>Message:</label>
@@ -54,6 +77,48 @@
           </div>
 	        </form>
       </div>
+
+      <!-- Desktop Layout / Circles and Forms -->
+      <div class="main-desktop">
+        <div class="circle-container">
+          <div class="circles">
+            <div class="big-circle">
+              <div class="medium-circle">
+                <div class="small-circle">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+          <form action="#" class="form_wrapper" name="contact_form"> 
+          <h1>Say Hello!</h1>
+            <input name="full_name" type="text" required placeholder="Your Name"/>
+          <br>
+          <input name="email" type="email" required placeholder="Your Email"/>
+          <br>
+          <fieldset class="ninjas">
+            <legend>I am a:</legend>
+
+
+            <input type="radio" id="pirate" name="character">
+            <label class="pirate" for="pirate">Pirate</label>
+            <div class="check"></div>
+
+            <input type="radio" id="ninja" name="character">
+            <label class="ninja" for="ninja">Ninja</label><br>
+            <div class="check2"></div>  
+          </fieldset>
+          <br>
+          <label>Message:</label>
+          <textarea name="message" cols="30" rows="10" placeholder="Enter Message Here..."> </textarea>
+          <br>
+          <div class="center">
+            <input type="submit" value="Submit">
+          </div>
+	        </form>
+      </div>
+
     </div>
     <footer>
       <a href="https://www.linkedin.com/in/devarcher/" target="_blank">
@@ -63,4 +128,4 @@
       <i class="fab fa-github-square"></i></a>
     </footer>
   </body>
-</html>
+</html> 
