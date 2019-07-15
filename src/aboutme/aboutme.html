@@ -14,7 +14,7 @@
   <body onload="document.body.className += ' loaded';">
     
     <!-- Mobile / Nav Wrapper -->
-    <div class="wrapper-small">
+    <div class="wrapper-small" id="top">
       <nav>
         <a href="../../index.html">
         <div class="circle-container">
@@ -31,30 +31,53 @@
       </nav>
     </div>
 
-      <!-- Desktop Nav -->
-      <div class="nav-desktop">
-        <h1 class="name animated fadeInRight">Chris Archer</h1>
-        <div class="nav-right animated fadeInLeft">
-          <a href="#" target="_blank">
-            <h1>Home</h1>
-          </a>
-          <a href="#" target="_blank">
-            <h1>Projects</h1>
-          </a>
-          <a href="#" target="_blank">
-            <h1>Resume</h1>
-          </a>
-          <a href="#" target="_blank">
-            <h1>Contact</h1>
-          </a>
-        </div>
-      </div>  
-    
+    <!-- Desktop Nav -->
+    <div class="nav-desktop">
+      <h1 class="name animated fadeInRight">Chris Archer</h1>
+      <div class="nav-right animated fadeInLeft">
+        <a href="#" target="_blank">
+          <h1>Home</h1>
+        </a>
+        <a href="#" target="_blank">
+          <h1>Projects</h1>
+        </a>
+        <a href="#" target="_blank">
+          <h1>Resume</h1>
+        </a>
+        <a href="#" target="_blank">
+          <h1>Contact</h1>
+        </a>
+      </div>
+    </div>  
     <hr>
+
+    <main class="container">
+      <div class="box-1" id="section1">
+        <h1>i take picutres</h1>
+        <p>of where i go</p>
+        <a href="#section2" class="chev"><i class="fas fa-chevron-down"></i></a>
+      </div>
+      <div class="box-2" id="section2">
+          <h1>i swim</h1>
+
+          <video src="./img/ChrisSwim.MOV" class="vid" playsinline muted preload controls></video>
+
+          <a href="#section3" class="chev"><i class="fas fa-chevron-down"></i></a>
+      </div>
+      <div class="box-3" id="section3">
+        <h1>meet tony</h1>
+        <p>he has three legs</p>
+        <a href="#section4" class="chev"><i class="fas fa-chevron-down"></i></a>
+      </div>
+      <div class="box-4" id="section4">
+        <h1>we make pots</h1>
+        <a href="#top" class="chev"><i class="fas fa-chevron-up"></i></a>
+      </div>
+    </main>
+
       <footer>
       <a href="https://www.linkedin.com/in/devarcher/" target="_blank">
       <i class="fab fa-linkedin"></i></a>
-
       <a href="https://github.com/devarcher" target="_blank">
       <i class="fab fa-github-square"></i></a>
     </footer>
