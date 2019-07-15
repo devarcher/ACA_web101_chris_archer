@@ -385,7 +385,7 @@ footer i {
     grid-template-rows: repeat(12, 1fr);
     background: url(./img/tulumnarrow.jpg) no-repeat;
     background-size: cover;
-    background-position-x: 50%;
+    background-position-y: 80%;
     color: rgba(224, 219, 250, 0.911);
   }
 
@@ -529,6 +529,7 @@ footer i {
     color: rgb(219, 219, 219);
     font-size: 1.5em;
     align-self: center;
+    padding-bottom: 35px;
   }
 
   footer i:hover {
