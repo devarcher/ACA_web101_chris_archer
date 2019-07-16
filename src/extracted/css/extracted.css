@@ -76,7 +76,7 @@ body {
 /* Locaction Search Form */
 .flex-form {
   width: 100%;
-  min-height: 150px;
+  min-height: 100px;
   background-color: rgba(64, 30, 18, .8);
   justify-content: center;
   align-items: center;
@@ -85,6 +85,7 @@ body {
 
 .flex-form > * {
   padding: 1em;
+  max-width: 70%;
   background: rgba(0, 0, 0, 0.6);
   border-right: 1px solid grey;
   border-radius: 0;
@@ -117,42 +118,22 @@ body {
   outline: none;
 }
 
-
-/* Action Area */
-.why {
-  grid-area: why;
-}
-
-.how {
-  grid-area: how;
-}
-
-.secret-1 {
-  grid-area: secret-1;
-}
-
-.secret-2 {
-  grid-area: secret-2;
-}
-
+/* Action Buttons */
 .action-btns {
   width: 100%;
   min-height: 50vh;
   font-family: 'Lato', sans-serif;
   background: rgba(64, 53, 52, 1);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-    "why how"
-    "secret-1 secret-2";
+  display: flex;
+  flex-direction: column; 
   justify-content: space-around;
   align-items: center;
-  padding-left: 8px;  
 }
 
 .action-btns > div {
   opacity: 0.75;
   transition: 0.3s;
+  margin: 10px;
 }
 
 .action-btns > div:hover {
@@ -164,7 +145,7 @@ body {
 .why {
   display: grid;
   grid-template-rows: 1fr auto;
-  width: 95%;
+  width: 85%;
   min-height: 18vh;
   color: rgba(217, 171, 154, 1);
   border: 1px solid var(--bronze);
@@ -179,13 +160,13 @@ body {
 
 .why h1 {
   grid-row: 2 / 3;
-  font-size: 1em;
+  font-size: 1.5em;
 }
 
 .how {
   display: grid;
   grid-template-rows: 1fr auto;
-  width: 95%;
+  width: 85%;
   min-height: 18vh;
   color: rgba(217, 171, 154, 1);
   border: 1px solid var(--bronze);
@@ -200,12 +181,13 @@ body {
 
 .how h1 {
   grid-row: 2 / 3;
+  font-size: 1.5em;
 }
 
 .secret-1 {
   display: grid;
   grid-template-rows: 1fr auto;
-  width: 95%;
+  width: 85%;
   min-height: 18vh;
   color: rgba(217, 171, 154, 1);
   border: 1px solid var(--bronze);
@@ -220,12 +202,13 @@ body {
 
 .secret-1 h1 {
   grid-row: 2 / 3;
+  font-size: 1.5em;
 }
 
 .secret-2 {
   display: grid;
   grid-template-rows: 1fr auto;
-  width: 95%;
+  width: 85%;
   min-height: 18vh;
   color: rgba(217, 171, 154, 1);
   border: 1px solid var(--bronze);
@@ -240,15 +223,35 @@ body {
 
 .secret-2 h1 {
   grid-row: 2 / 3;
+  font-size: 1.5em;
 }
 
 footer {
   width: 100%;
-  height: 35px;
+  height: 50px;
   padding: 7;
-  font-family: 'Quattrocento', serif;
-  font-size: 1.25em;
+  font-size: 2em;
   background-color: rgba(140, 93, 66, .8);
   color: var(--coffee);
-  letter-spacing: .2em;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+/* Tablet
+/* Action Area *
+.why {
+  grid-area: why;
+}
+
+.how {
+  grid-area: how;
+}
+
+.secret-1 {
+  grid-area: secret-1;
+}
+
+.secret-2 {
+  grid-area: secret-2;
 }
