@@ -264,11 +264,15 @@ footer i:hover {
 }
 
 /* Tablet */
-@media only screen and (min-width:568px) {
+@media only screen and (min-width:568px) and (max-width:1024px) {
 
+  .logo-placeholder {
+    height: 75px;
+  }
 
   .logo-placeholder h1 {
-    font-size: 2.25em;
+    font-size: 2.55em;
+    margin-left: 10px;
   }
 
   .right-nav {
@@ -276,6 +280,7 @@ footer i:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-right: 10px;
   }
 
   .far:hover, .fas:hover {
@@ -284,7 +289,7 @@ footer i:hover {
 
   .fa-heart {
     display: unset;
-    font-size: 1.25em;    
+    font-size: 1.35em;    
   }
 
   nav i span {
@@ -293,7 +298,7 @@ footer i:hover {
 
   .fa-user {
     display: unset;
-    font-size: 1.25em;
+    font-size: 1.35em;
   }
 
   .fa-bars {
@@ -305,7 +310,7 @@ footer i:hover {
     background: url(../img/hero_tablet.jpg) no-repeat;
     background-size: cover;
     width: 100%;
-    height: 60vh;
+    height: 55vh;
   }
 
   .top h1 {
@@ -317,6 +322,7 @@ footer i:hover {
     background: rgba(140, 93, 66, .6);
   }
 
+  /* Search Box Size */
   .flex-form > input[type="search"] {
     width: 300px;
   }
@@ -331,6 +337,26 @@ footer i:hover {
   }
 
   .action-btns > div {
-    margin-top: 15px
+    margin-top: 15px;
+    overflow: hidden;
+  }
+
+  .action-btns > div > h1 {
+    font-size: 1.75em;
   }
 }
+
+
+/* Image Scale on Hover for Desktop
+  .action-btns > div {
+    margin-top: 15px;
+    overflow: hidden;
+  }
+
+  .why img {
+    transition: .3s ease-in;
+  }
+
+  .why img:hover {
+    transform: scale(1.05);
+  }
