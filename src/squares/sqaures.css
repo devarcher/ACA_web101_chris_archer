@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.wrapper {
+  width: 50px;
+  height: 100vh;
+  margin: 25px auto;
+}
+
+.wrapper:hover > .box:nth-child(odd) {
+  background: palevioletred;
+  transform: translate(-50px) rotate(-360deg) scale(.5);
+}
+
+.wrapper:hover > .box:nth-child(even) {
+  background: thistle;
+  transform: translate(50px) rotate(360deg) scale(2);
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  margin: 25px auto;
+  transition: all 2s;
+  box-shadow: 0 4px 6px rgba(128,128,128.5);
+}
+
+.box-1 {
+  background:goldenrod;
+}
+
+.box-2 {
+  background:paleturquoise;
+}
+
+.box-3 {
+  background:mistyrose;
+}
+
+.box-4 {
+  background:moccasin;
+}
+
+.box-5 {
+  background:lightcoral;
+}
+
+.box-6 {
+  background:lightpink;
+}
+
+.box-7 {
+  background:lightseagreen;
+}
+
+.box-8 {
+  background:lightslategray;
+}
+
+.box-9 {
+  background:lightcyan;
+}
+
+.box-10 {
+  background:azure;
+}
+
+.box-11 {
+  background:aliceblue;
+}
+
+.box-12 {
+  background:plum;
+}
+
+
+
