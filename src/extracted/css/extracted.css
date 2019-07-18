@@ -24,7 +24,9 @@ body {
 .wrapper {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
+
 
 a {
   text-decoration: none;
