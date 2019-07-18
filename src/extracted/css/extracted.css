@@ -52,13 +52,13 @@ a {
 .logo-placeholder h1 {
   font-family: 'Quattrocento', serif;
   font-size: 1.7em;
-  color: var(--coffee);
+  color: var(--bronze);
   letter-spacing: .2em;
   padding: 10;
 }
 
 nav i {
-  color: rgba(242, 197, 114, .8);
+  color: var(--coffee);
   font-size: 1.75em;
   padding: 10;
 }
@@ -336,12 +336,12 @@ footer i:hover {
   }
 
   .far:hover, .fas:hover {
-    color: var(--coffee);
+    color: var(--bronze);
   }
 
   .fa-heart {
     display: unset;
-    font-size: 1.35em;    
+    font-size: 1.35em;  
   }
 
   nav i span {
@@ -440,7 +440,7 @@ footer i:hover {
   }
 
   .far:hover, .fas:hover {
-    color: var(--coffee);
+    color: var(--bronze);
   }
 
   .fa-heart {
@@ -496,11 +496,41 @@ footer i:hover {
     width: 125px;
   }
 
+  /* Icon Section */
+  .icon-section {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    padding-top: 20px;
+  }
+
+  .icon-section ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+  }
+
+  .icon-section li {
+    margin: 0;
+  }
+
+  .icon-section i {
+    font-size: 2em;
+    justify-self: center;
+    margin: 0;
+  }
+
+  .icon-section h3 {
+    font-size: 1.2em;
+  }
+
     /* Action Area */
    .action-btns {
     display: flex;
     flex-direction: row;
     min-height: unset;
+    padding: 35px 0px;
+    align-items: flex-start;
   }
 
   .action-btns a {
