@@ -164,6 +164,7 @@ nav i:hover {
   display: grid;
   grid-template-columns: 1fr 3fr;
   margin: 25px;
+  align-items: center;
 }
 
 .icon-section i {
@@ -376,6 +377,27 @@ footer i:hover {
   /* Search Box Size */
   .flex-form > input[type="search"] {
     width: 300px;
+  }
+
+  /* Icon Section */
+  .icon-section {
+    display: flex;
+    justify-content: center;
+  }
+
+  .icon-section ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 0;
+  }
+
+  .icon-section i {
+    font-size: 2em;
+  }
+
+  .icon-section h3 {
+    font-size: 1.2em;
   }
 
     /* Action Area */
