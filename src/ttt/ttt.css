@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: grey;
+}
+
+.box-wrapper {
+  width: 602px;
+  height: 602px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  
+}
+
+.box {
+  height: 200px;
+  width: 200px;
+  border: 2px solid black;
+  background: palegoldenrod;
+}
