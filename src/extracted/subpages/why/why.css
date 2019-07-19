@@ -214,8 +214,15 @@ nav i:hover {
   font-weight: 300;
 }
 
-/* Hero Image */
+/* Hero Video */
+  .video {
+    width: 100vw;
+    height: auto;
+  }
 
+  .video video {
+    
+  }
 
 /* Action Buttons */
 .action-btns {
