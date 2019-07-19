@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="../../css/reset.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link rel="stylesheet" href="../../css/reset.css">
+  <link rel="stylesheet" href="../../css/animate.css">
   <script src="https://kit.fontawesome.com/c9667fd976.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Lato:300|Roboto:100,300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Quattrocento&display=swap" rel="stylesheet">
@@ -34,10 +34,10 @@
                 <ul>
                   <li><a href="#">Login</a></li>
                   <li><a href="#">Saved</a></li>
-                  <li><a href="#">Why</a></li>
-                  <li><a href="#">How</a></li>
-                  <li><a href="#">Nominate</a></li>
-                  <li><a href="#">Recruit</a></li>
+                  <li><a href="../../extracted.html">Home</a></li>
+                  <li><a href="../how/how.html">How</a></li>
+                  <li><a href="../nominate/nominate.html">Nominate</a></li>
+                  <li><a href="../recruit/recruit.html">Recruit</a></li>
                 </ul>
               </div>
             </div>
@@ -46,11 +46,27 @@
       </div>
     </nav>
 
-    <section class="video">
-      <video controls>
-        <source src="./vid/1080p.MOV" type="video/mp4">
-      </video>
+    <section class="video-area">
+      <div class="video">
+        <video controls>
+          <source src="./vid/1080p.MOV" type="video/mp4">
+        </video>
+      </div>
+      <div class="video-text">
+        <i class="fas fa-info-circle"></i><p>Current methods of finding a coffee shop with reliably good espresso drinks fall woefully short.</p>
+      
+        <i class="fas fa-info-circle"></i><p>Large market review sites are flooded with subjective reviews that miss the target. Many times the reviewer isn't even commenting on the quality of the coffee.</p>
+        
+        <i class="fas fa-info-circle"></i><p>Coffee industry websites and food and culture websites are a little better in terms of quality reviews; however, most are in depth reviews that highlight one or two coffee shops over the course of many months or even years.</p>
+        
+        <i class="fas fa-info-circle"></i><p>Extracted is focused on providing users with up to date, highly verified information: what coffee shops deilver consistent high quality espresso drinks.</p>
+      </div>
     </section>    
+
+    <form class="flex-form">
+      <input type="search" class="search animated fadeInLeftBig" placeholder="Enter Zipcode">
+      <input type="submit" class="submit animated fadeInRightBig" value="Search">
+    </form>
 
     <div class="action-btns">
       <a href="#" target="_blank">
