@@ -25,8 +25,8 @@ body {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  line-height: 1.25;
 }
-
 
 a {
   text-decoration: none;
@@ -214,7 +214,78 @@ nav i:hover {
   font-weight: 300;
 }
 
-/* Hero Image */
+/* How To Section */
+.howto-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.howto-wrapper > div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.howto-wrapper > div > p {
+  padding: 15px;
+}
+
+.howto-wrapper > div > img {
+  width: 300px;
+}
+
+.howto-wrapper .invited {
+  background: rgba(64, 53, 52, .95);
+  padding-top: 20px;
+  color: rgb(209, 185, 185);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+}
+
+.howto-wrapper .signup {
+  padding-top: 20px;
+  background: rgba(64, 53, 52, 1);
+  color: rgba(185, 183, 183, 0.897);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+}
+
+.howto-wrapper .nominate {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: rgba(64, 53, 52, .9);
+  color: rgba(185, 183, 183, 0.897);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+}
+
+.howto-wrapper .verify {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: rgba(64, 53, 52, .97);
+  color: rgba(185, 183, 183, 0.897);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+}
+
+.howto-wrapper .recruit {
+  padding-top: 20px;
+  background: rgba(64, 53, 52, .92);
+    color: rgba(185, 183, 183, 0.897);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+}
+
+.howto-wrapper .travel-and-use {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: rgba(64, 53, 52, .95);
+    color: rgba(185, 183, 183, 0.897);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+}
 
 
 /* Action Buttons */
@@ -225,6 +296,7 @@ nav i:hover {
   background: rgba(64, 53, 52, 1);
   display: flex;
   flex-direction: column; 
+  padding: 10px 0px;
 }
 
 .action-btns a {
