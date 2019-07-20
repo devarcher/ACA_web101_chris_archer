@@ -220,7 +220,7 @@ nav i:hover {
   grid-template-rows: 1fr 1fr 1fr;
   background: url(./img/shop.jpg) no-repeat;
   background-size: contain;
-  background-position-y: 50%;
+  background-position: 50% 50%;
   height: 40vh;
   width: 100%;
   background-color: rgba(217, 160, 91, .6);
