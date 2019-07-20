@@ -228,6 +228,27 @@ nav i:hover {
   align-items: center;
 }
 
+.howto-wrapper > div > h1 {
+  display: flex;
+  font-size: 1.5em;
+  margin-top: 8px;
+  justify-content: center;
+  width: 100%;
+  background: rgba(140, 93, 66, .3);
+}
+
+.howto-wrapper .nom {
+  margin-top: 0px;
+}
+
+.howto-wrapper .ver {
+  margin-top: 0px;
+}
+
+.howto-wrapper .travel {
+  margin: 0;
+}
+
 .howto-wrapper > div > p {
   padding: 15px;
 }
