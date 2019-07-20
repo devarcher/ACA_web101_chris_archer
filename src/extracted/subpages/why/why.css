@@ -27,19 +27,18 @@ body {
   overflow: hidden;
 }
 
-
 a {
   text-decoration: none;
 }
 
 /* Hidden for mobile size */
-  .fa-heart {
-    display:none;
-  }
+.fa-heart {
+  display:none;
+}
 
-  .fa-user {
-    display:none;
-  }
+.fa-user {
+  display:none;
+}
 
 /* Header / Navigation */
 .logo-placeholder {
@@ -310,7 +309,6 @@ nav i:hover {
   outline: none;
 }
 
-
 /* Action Buttons */
 .action-btns {
   width: 100%;
@@ -484,6 +482,11 @@ footer i:hover {
     font-size: 1.75em;
   }
 
+  .video-area .video-text > p {
+    font-size: 1.5em;
+    margin: 10px;
+  }
+  
   /* Search Box Size */
   .flex-form > input[type="search"] {
     width: 300px;
@@ -570,6 +573,11 @@ footer i:hover {
 
   .video-text {
     justify-self: start; 
+    font-size: 1.3em;
+  }
+
+  .video-text > p {
+    margin-top: 10px;
   }
 
   /* Search Box Size */
