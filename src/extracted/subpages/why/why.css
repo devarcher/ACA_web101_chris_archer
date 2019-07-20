@@ -512,7 +512,7 @@ footer i:hover {
 }
 
 /* Desktop Layout */
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1050px) {
 
   .logo-placeholder {
     height: 75px;
@@ -558,7 +558,7 @@ footer i:hover {
   /* Video Section */
   .video-area {
     width: 100vw;
-    height: 50vh;
+    height: 60vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
@@ -573,7 +573,7 @@ footer i:hover {
 
   .video-text {
     justify-self: start; 
-    font-size: 1.3em;
+    font-size: 1.25em;
   }
 
   .video-text > p {
