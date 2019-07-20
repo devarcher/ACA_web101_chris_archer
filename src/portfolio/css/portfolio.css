@@ -292,6 +292,33 @@ nav h1 {
   max-width: 600px;
 }
 
+.project8 .port h3 {
+  grid-column: 1 / 2;
+}
+
+.project8 img {
+  width: 450px;
+  max-width: 100%;
+  align-self: center;
+  justify-self: right;
+  border: 1px solid black;
+}
+
+.project8 h1 {
+  grid-column: 2 / 3;
+  grid-row: -1 / 2;
+  display: flex;
+  margin-top: 60;
+  font-size: 1.5em;
+}
+
+.project8 p {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  display: flex;
+  align-self: center;
+  max-width: 600px;
+}
 
 
 .footer {
