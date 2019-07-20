@@ -18,13 +18,14 @@ body {
   height: 602px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  
+  grid-template-rows: 1fr 1fr 1fr; 
 }
 
 .box {
+  display: grid;
   height: 200px;
   width: 200px;
   border: 2px solid black;
   background: palegoldenrod;
+  font-size: 3em;
 }

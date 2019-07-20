@@ -9,19 +9,65 @@
 
 var boxClass = document.querySelector(".box");
 var allBoxes = document.querySelectorAll(".box");
+var mark = "O";
+
+function switchPlayer() {
+  if (mark == "O") {
+    mark = "X";
+  } else {
+    mark = "O";
+  }
+  console.log("mark", mark)
+}
+
 console.log("allBoxes", allBoxes);
-boxClass.onclick = function setXO() {
-  console.log('clickedMe!'),
-  event.target.innerText = "O";
-}
+allBoxes[0].onclick = function setXO(event) {
+  event.target.innerText = mark;
+  switchPlayer();
+}   
 
-var boxOne = document.querySelector(".box1");
-boxOne.onclick = function setXO() {
-  event.target.innerText = "X";
-}
+allBoxes[1].onclick = function setXO(event) {
+  event.target.innerText = mark;
+  switchPlayer();
+}   
 
+allBoxes[2].onclick = function setXO(event) {
+  event.target.innerText = mark;
+  switchPlayer();
+}   
 
+allBoxes[3].onclick = function setXO(event) {
+  event.target.innerText = mark;
+  switchPlayer();
+}   
 
+allBoxes[4].onclick = function setXO(event) {
+  console.log('clickedMeO!');
+  event.target.innerText = mark;
+  switchPlayer();
+}   
 
+allBoxes[5].onclick = function setXO(event) {
+  console.log('clickedMeO!');
+  event.target.innerText = mark;
+  switchPlayer();
+}   
 
+allBoxes[6].onclick = function setXO(event) {
+  console.log('clickedMeO!');
+  event.target.innerText = mark;
+  switchPlayer();
+}   
+
+allBoxes[7].onclick = function setXO(event) {
+  console.log('clickedMeO!');
+  event.target.innerText = mark;
+  switchPlayer();
+}   
+
+allBoxes[8].onclick = function setXO(event) {
+  console.log('clickedMeO!');
+  event.target.innerText = mark;
+  switchPlayer();
+}   
 
