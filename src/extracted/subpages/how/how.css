@@ -223,7 +223,7 @@ nav i:hover {
   background-position-y: 50%;
   height: 40vh;
   width: 100%;
-  background-color: rgba(217, 160, 91, .5);
+  background-color: rgba(217, 160, 91, .6);
   background-blend-mode: multiply;
 }
 
