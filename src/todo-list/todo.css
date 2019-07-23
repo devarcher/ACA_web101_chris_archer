@@ -89,11 +89,14 @@ body {
 }
 
 .list li {
+  width: 40vw;
   list-style: none;
   font-size: 2.25em;
   padding: 10px 50px;
   margin-bottom: 10px;
   background: var(--four);
   border-radius: 10px;
-}
+  display: flex;
+  justify-content: space-between;
+} 
 
