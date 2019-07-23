@@ -22,7 +22,7 @@ body {
 }
 
 .wrapper {
-  max-width: 35vw;
+  width: 50vw;
   height: 80vh;
   margin: 35px auto;
   font-family: 'Open Sans', sans-serif;
@@ -44,31 +44,39 @@ body {
 }
 
 .top h1 {
+  width: 100%;
   font-size: 3em;
   color: var(--four);
-  padding: 3px 25px;
+  padding: 10px;
   background: rgba(242, 115, 4, .7);
   border-radius: 10px;
 }
 
 .form {
-  width: 100%;
+  width: 60%;
   height: 30%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+.form input[type="text"] {
+  background: var(--three);
+  outline: none;
+  border: 3px solid var(--three);
+}
+
 .form_text {
-  font-size: 2em;
-  border-right: 3px solid grey;
+  font-size: 2.5em;
+  border-radius: 10px;
 }
 
 .form_button {
   font-size: 2em;
   background: var(--two);
-  border: 3px solid var(--two);
+  color: var(--five);
+  border: 6px solid var(--two);
+  border-radius: 10px;
 }
 
 .list {
