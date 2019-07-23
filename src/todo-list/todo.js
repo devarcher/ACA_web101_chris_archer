@@ -1,11 +1,15 @@
 var button = document.querySelector('.form_button');
 var itemList = document.querySelector('.u_list');
+var filter = document.querySelector('.searchbar');
 
 // Form Submit Event
 button.addEventListener('click', addItem);
 
 // Delete Event - Delete Item
 itemList.addEventListener('click', removeItem);
+
+// Filter Event
+filter.addEventListener('keyup', filterItems);
 
 // Add Item
 function addItem(e){
@@ -41,9 +45,26 @@ function addItem(e){
 //Remove Item
 function removeItem(e) {
   if (e.target.classList.contains('delete')) {
-    if(confirm('Are you absolutely certain?')) {
+    if(confirm('Confirm Delete?')) {
       var li = e.target.parentElement;
       itemList.removeChild(li);
     }
   }
+}
+
+// Filter Items
+function filterItems(e){
+  // convert text to lowercase
+  var text = e.target.value.toLowerCase();
+  //Get <li>s
+  var items = itemList.getElementsByTagName('li')
+  //Convert to an array
+  Array.from(items).forEach(function(item) {
+    var itemName = item.firstChild.textContent;
+    if(itemName.toLowerCase().indexOf(text) != -1){
+      item.style.display = 'block';
+     } else {
+      item.style.display = 'none';
+     }
+  });
 }
