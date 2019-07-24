@@ -1,6 +1,13 @@
 var button = document.querySelector('.form_button');
 var itemList = document.querySelector('.u_list');
 var filter = document.querySelector('.searchbar');
+var textInputArea = document.querySelector('form_text');
+
+//Clear Placeholder on Focus
+$('form_text').focus(function(){
+  $(this).removeAttr('placeholder');
+  console.log(1);
+});
 
 // Form Submit Event
 button.addEventListener('click', addItem);
@@ -39,7 +46,9 @@ function addItem(e){
 
   //Append li to list
   itemList.appendChild(li);
-  console.log();
+
+  //Clear TextBox
+  document.querySelector('.form_text').value = ""; 
 }
 
 //Remove Item
