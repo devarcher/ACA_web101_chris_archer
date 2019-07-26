@@ -5,24 +5,24 @@ $('document').ready(function(){
     revert:true
   });
 
-  $('.left-box').droppable({
+  $('.towerBox').droppable({
     accept: '.disc',
     drop: function(event, ui) {
-      $(this).append($(ui.draggable));
+      $(this).prepend($(ui.draggable));
     }
   })
 
-  $('.middle-box').droppable({
+  $('.towerBox').droppable({
     accept: '.disc',
     drop: function(event, ui) {
-      $(this).append($(ui.draggable));
+      $(this).prepend($(ui.draggable));
     }
   })
 
-  $('.right-box').droppable({
+  $('.towerBox').droppable({
     accept: '.disc',
     drop: function(event, ui) {
-      $(this).append($(ui.draggable));
+      $(this).prepend($(ui.draggable));
     }
   })
 })

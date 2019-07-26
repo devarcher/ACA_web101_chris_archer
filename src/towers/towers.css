@@ -70,39 +70,50 @@ body {
 
 .tower {
   width: 35px;
-  grid-column: 9 / 11;
-  grid-row: 6 / 13;
-  z-index: 0;
+  height: 35vh;
   justify-self: center;
+  align-self: center;  
+  position: absolute;
+  z-index: 0; 
   background: #D97925;
   border-radius: 5px;
   box-shadow: -5px 0px 7px rgba(191, 69, 42, 0.75);
 } 
 
-.disc {
-  z-index: 1;
-  border-radius: 10px;
-  box-shadow: -1px 3px 7px rgba(191, 69, 42, 0.75);
+.towerBox {
+  height: 100%;
+  grid-column: 4 / 16;
+  grid-row: 6 / 13;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
+
+.disc {
+  position: relative;
+  border-radius: 10px;
+  z-index: 1000;
+  box-shadow: -1px 3px 7px rgba(191, 69, 42, 0.75);
+  align-self: center;
+  justify-self: flex-end;
+ }
 
 .large-disc {
   background: #BFAE78;
-  grid-column: 5 / -5;
-  grid-row: 12 / 13;
-  height: 100%;
-  align-self: end;
+  height: 15%;
+  width: 15rem;
+
 }
 
 .medium-disc {
   background: #E6D091;
-  grid-column: 7 / -7;
-  grid-row: 11 / 12;
-  height: 100%;
+  width: 12rem;
+  height: 15%;
 }
 
 .small-disc {
   background: #FFE7A1;
-  grid-column: 8 / -8;
-  grid-row: 10 / 11;
-  height: 100%
+  width: 9rem;
+  height: 15%;
 }
