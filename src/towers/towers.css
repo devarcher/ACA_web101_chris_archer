@@ -19,7 +19,6 @@ body {
 }
 
 .top-header {
-  border: 1px solid red;
   width: 100%;
   grid-column: 1 / -1;
   grid-row: 1 / 2;
@@ -42,19 +41,16 @@ body {
 }
 
 .left-box {
-  border: 1px solid blue;
   grid-column: 1 / 2;
   grid-row: 2 / 3;
 }
 
 .middle-box {
-  border: 1px solid green;
   grid-column: 2 / 3;
   grid-row: 2 / 3;
 }
 
 .right-box {
-  border: 1px solid gold;
   grid-column: 3 / 4;
   grid-row: 2 / 3;
 }
@@ -84,15 +80,14 @@ body {
   height: 100%;
   grid-column: 4 / 16;
   grid-row: 6 / 13;
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 }
 
-.disc {
-  position: relative;
+.disc { 
   border-radius: 10px;
+  position: relative;
   z-index: 1000;
   box-shadow: -1px 3px 7px rgba(191, 69, 42, 0.75);
   align-self: center;
@@ -103,7 +98,6 @@ body {
   background: #BFAE78;
   height: 15%;
   width: 15rem;
-
 }
 
 .medium-disc {
