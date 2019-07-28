@@ -1,9 +1,16 @@
+
+
+.border-4 {
+    border-width:4px !important;
+}
+
 .img-fluid {
   max-width: 25%;
   height: auto;
   margin: auto;
   display: block;
 }
+
  .card-grad {
   padding: 10px;
   margin: 20 auto;
@@ -15,8 +22,13 @@
   justify-content: flex-end;
 }
 
-.border-4 {
-    border-width:4px !important;
+.spacer {
+  margin: 80px auto;
+}
+
+.title-box {
+  padding: 10px;
+  padding-bottom: 85px;
 }
 
 @media (max-width: 960px) {
@@ -25,6 +37,19 @@
     height: auto;
     margin: auto;
     display: block;
+  }
+
+  .spacer {
+    margin: 30px auto;
+  }
+
+  .wrapper {
+    width: 100% !important;
+  }
+
+  .title-box {
+    width: 75% !important;
+    padding-bottom: 40px
   }
 }
 
@@ -38,5 +63,13 @@
 
   .card-grad > * {
     font-size: 1em;
+  }
+
+  .spacer {
+    margin: 30px auto;
+  }
+
+  .title-box {
+    width: 100% !important;
   }
 }
