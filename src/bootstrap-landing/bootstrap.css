@@ -43,6 +43,13 @@
   padding: 30px;
 }
 
+/* Fontawesome Icons */
+.fas {
+  font-size: 3em;
+  background: rgba(128,128,128,.075);
+  padding: 10px;
+}
+
 /* > Large Phone to Tablet */
 @media (max-width: 960px) {
   .img-fluid {
