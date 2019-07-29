@@ -55,8 +55,15 @@
   padding: 10px;
 }
 
+/* Icon Deck responsive grid */
+.icon-deck {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: .5rem;
+}
+
 /* > Large Phone to Tablet */
-@media (max-width: 960px) {
+@media (max-width: 1024px) {
   .img-fluid {
     max-width: 60%;
     height: auto;
@@ -75,6 +82,12 @@
   .title-box {
     width: 75% !important;
     padding-bottom: 40px
+  }
+
+  .icon-deck {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: .5rem;
   }
 }
 
@@ -98,4 +111,7 @@
   .title-box {
     width: 100% !important;
   }
+
+  .icon-deck {
+    display: unset;
 }
