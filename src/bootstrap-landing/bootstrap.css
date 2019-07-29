@@ -75,23 +75,31 @@
   display: block;
 }
 
-/* Footer links styling */
+/* Footer styling */
+
+/* Footer Top Spacing */
+.section {
+  padding-top: 40px !important;
+}
+
+/* Text Hover on cards */
+.section > .row > .list-group > .foot-a > .list-group-item > a:hover {
+  color: darkcyan;
+}
+
 .foot-a a {
  text-decoration: none;
  color: grey;
  font-size: 1rem;
 }
 
-footer > .ul-start > .list-group-flush > .foot-a > .list-group-item {
+/* UL Group styling */
+footer > .ul-start > .list-group > .foot-a {
+  width: 250px;
+}
+
+footer > .ul-start > .list-group > .foot-a > .list-group-item {
   padding: 8px;
-}
-
-.list-group-flush .list-group-item:first-child {
-  border-top: 0; 
-}
-
-.list-group-flush .list-group-item:last-child {
-  border-bottom: 0; 
 }
 
 .video-card {
@@ -104,6 +112,11 @@ footer > .ul-start > .list-group-flush > .foot-a > .list-group-item {
 
 .video-box {
   margin-bottom: 30px;
+}
+
+/* Icon Hover State */
+.section > .row > .icons > a > .fab:hover {
+  color: lightgrey !important;
 }
 
 /* > Large Phone to Tablet */
@@ -147,6 +160,10 @@ footer > .ul-start > .list-group-flush > .foot-a > .list-group-item {
     height: auto;
     margin: auto;
     display: block;
+  }
+
+  footer > .ul-start > .list-group > .foot-a {
+   width: 200px;
   }
 }
 
@@ -207,12 +224,20 @@ footer > .ul-start > .list-group-flush > .foot-a > .list-group-item {
     margin-top: 20px;
   }
 
-  footer > .row > .list-group-flush > ul {
+  footer > .row > .list-group > ul {
     padding: 0;
   }
 
-
   .list-group-item > * {
     font-size: .8em !important;
+  }
+
+  footer > .ul-start > .list-group > .foot-a {
+    width: 250px;
+  }
+
+  .icons a {
+    font-size: .85em !important;
+    padding: 5px;
   }
 }
