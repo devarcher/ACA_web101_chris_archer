@@ -98,6 +98,17 @@
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-gap: .5rem;
   }
+
+  .cta-section {
+    width: 100% !important;
+  }
+
+  .cta-image {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    display: block;
+  }
 }
 
 /* Large Phone and smaller */
@@ -123,5 +134,16 @@
 
   .icon-deck {
     display: unset;
+  }
+
+  .cta-section {
+    width: 100% !important;
+  }
+
+  .cta-image {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    display: block;
   }
 }
