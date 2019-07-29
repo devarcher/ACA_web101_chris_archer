@@ -75,6 +75,33 @@
   display: block;
 }
 
+/* Footer links styling */
+.foot-a a {
+ text-decoration: none;
+ color: grey;
+ font-size: .75rem;
+}
+
+footer > .ul-start > .list-group-flush > .foot-a > .list-group-item {
+  padding: 8px;
+}
+
+.list-group-flush .list-group-item:first-child {
+  border-top: 0; 
+}
+
+.list-group-flush .list-group-item:last-child {
+  border-bottom: 0; 
+}
+
+.video-card {
+  font-size: 1rem;
+}
+
+.video-btn {
+  margin-top: 15px;
+}
+
 /* > Large Phone to Tablet */
 @media (max-width: 1024px) {
   .img-fluid {
@@ -157,5 +184,30 @@
     height: auto;
     margin: auto;
     display: block;
+  }
+
+  footer > .row {
+    width: 100% !important;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: .5rem;
+  }
+
+  footer > .row {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+  }
+
+  footer > .row > .list-group-flush > ul {
+    padding: 0;
+  }
+
+  .list-group-item > * {
+    font-size: 1em !important;
   }
 }
