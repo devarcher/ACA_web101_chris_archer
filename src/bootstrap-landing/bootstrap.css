@@ -1,0 +1,361 @@
+/* Fonts
+font-family: 'Red Hat Display', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+/* Global */
+/* Space between secitions */
+.spacer {
+  margin: 80px auto;
+}
+
+
+/* Desktop Site */
+
+/* Navigation */
+/* Heather Clever Brand Styling */
+.navbar-brand {
+  font-family: 'Red Hat Display', sans-serif;
+  background: -webkit-linear-gradient(45deg, #5bc0de, #0ECFB7 80%);
+  background-clip: text !important;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.75em;
+}
+
+/* Link Text Centering */
+.navbar-nav {
+  margin-top: 3px;
+  margin-left: 20px;
+}
+
+/* Navigation bottom border */
+.border-4 {
+  border-width: 4px !important;
+}
+
+/* Showcase Area */
+/* Hero Image Sizing */
+.img-fluid {
+  max-width: 25%;
+  height: auto;
+  margin: auto;
+  display: block;
+}
+
+/* Hero Image overlay and text */
+ .card-grad {
+  border-radius: 5px;
+  background: rgba(128,128,128,.075);
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: flex-end;
+}
+
+/* Hero Text Padding */
+.hero-title {
+  padding-bottom: 50px;
+  padding-left: 50px;
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 3.25em;
+}
+
+/* Hero Text Rotating Word */
+#rotate {
+  color: #0ECFB7;
+  width: 15vw;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+/* Here to Help Section */
+/* Breating Room for "Here to Help" section */
+.title-box {
+  padding: 10px;
+  padding-bottom: 85px;
+}
+
+/* Heather Help Text Styling */
+.heather-help {
+  background: -webkit-linear-gradient(45deg, #5bc0de, #0ECFB7 80%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 2.75em;
+}
+
+/* Training Options Section  */
+/* Card Styling */
+.card:hover {
+  box-shadow: -10px 10px 20px rgba(128,128,128,.2);
+  background: rgba(189, 213, 241, 0.075);
+}
+
+h5 {
+  background: -webkit-linear-gradient(45deg, #5bc0de, #0ECFB7 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+/* Remove Box Shadow from Hero Image (on a card) */
+.hero:hover {
+  box-shadow: none;
+}
+
+/* Blockquote Padding */
+.blockquote {
+  padding: 30px;
+}
+
+/* Title Styling  */
+h3 {
+  background: -webkit-linear-gradient(45deg, #5bc0de, #0ECFB7 80%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+/* Misc Info Section */
+/* Fontawesome Icons */
+.fas {
+  font-size: 3em;
+  background: rgba(128,128,128,.075);
+  padding: 10px;
+}
+
+/* Icon Deck responsive grid */
+.icon-deck {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: .5rem;
+}
+
+.cta-image {
+  max-width: 75%;
+  height: auto;
+  margin: auto;
+  display: block;
+}
+
+/* Footer styling */
+/* Footer Top Spacing */
+.section {
+  padding-top: 40px !important;
+}
+
+/* Text Hover on cards */
+.section > .row > .list-group > .foot-a > .list-group-item > a:hover {
+  color: darkcyan;
+}
+
+/* UL Group styling */
+/* List Width */
+footer > .ul-start > .list-group > .foot-a {
+  width: 250px;
+}
+
+footer > .ul-start > .list-group > .foot-a > .list-group-item {
+  padding: 8px;
+}
+
+ /* Title Styling  */
+.h3 {
+  background: -webkit-linear-gradient(45deg, #5bc0de, #0ECFB7 80%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+ .foot-a a {
+  text-decoration: none;
+  color: grey;
+  font-size: 1rem;
+}
+
+.video-card {
+  font-size: 1rem;
+}
+
+.video-btn {
+  margin-top: 15px;
+}
+
+.video-box {
+  margin-bottom: 30px;
+}
+
+/* Icon Hover State */
+.section > .row > .icons > a > .fab:hover {
+  color: lightgrey !important;
+}
+
+/* > Large Phone to Tablet */
+/* Hero Image */
+@media (max-width: 1024px) {
+  .img-fluid {
+    max-width: 60%;
+    height: auto;
+    margin: auto;
+    display: block;
+  }
+
+  /* Hero Text Padding */
+ .hero-title {
+    padding: 30px;
+    font-size: 3.75em;
+  }
+  
+  .hero-text-spacer {
+    padding: 20px;
+  }
+
+  /* Gloabl Spacer */
+  .spacer {
+    margin: 30px auto;
+  }
+
+  /*Heather Help Font Styling */
+  .heather-help {
+    font-size: 2.5em;
+  }
+
+  /* Increase size of wrapper for Here to help section */
+  .wrapper {
+    width: 100% !important;
+  }
+
+  /* Increase Title Box size for tablet */
+  .title-box {
+    width: 75% !important;
+    padding-bottom: 40px
+  }
+
+  /* Increase card deck size to eliminate poor wrapping */
+  .icon-deck {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: .5rem;
+  }
+
+  /* Increase width to fill out screen on tablet / mobile of Call to Action */
+  .cta-section {
+    width: 100% !important;
+  }
+
+  .cta-image {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    display: block;
+  }
+
+  /* Footer Cards width increase to fill out on screen */
+  footer > .ul-start > .list-group > .foot-a {
+   width: 200px;
+  }
+}
+
+/* Large Phone and smaller */
+@media (max-width: 568px) {
+  /* Hero Image Size */
+  .img-fluid {
+    max-width: 60%;
+    height: auto;
+    margin: auto;
+    display: block;
+  }
+
+  .hero-title {
+    padding-bottom: 50px;
+    padding-left: 50px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1.5em;
+  }
+
+  .hero-title {
+    padding: 0;
+    padding-left: 15px;
+  }
+
+  /* Heather Help section */
+  .heather-help {
+    font-size: 2.5em;
+  }
+
+  .hero-text-spacer {
+    padding: 10px;
+  }
+
+  /* Space between sections for mobile */
+  .spacer {
+    margin: 30px auto;
+  }
+
+  /* Increase width of Heather is here to help! */
+  .title-box {
+    width: 100% !important;
+  }
+
+  /* Remove grid setting from icon deck for page formatting */
+  .icon-deck {
+    display: unset;
+  }
+
+  /* Increase call to action area width to fill screen */
+  .cta-section {
+    width: 100% !important;
+  }
+
+  .cta-image {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    display: block;
+  }
+
+  /* Increase row size to fill screen */
+  footer > .row {
+    width: 100% !important;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: .5rem;
+  }
+
+  /* List Items styling */
+  footer > .row > .list-group > ul {
+    padding: 0;
+  }
+
+  .list-group-item > * {
+    font-size: .8em !important;
+  }
+
+  footer > .ul-start > .list-group > .foot-a {
+    width: 300px;
+  }
+
+  /* Video button sizing */
+  .video-btn {
+    width: 300px;
+  }
+
+  /* Footer Font Awesome Icons Styling */
+  .icons a {
+    font-size: .85em !important;
+    padding: 5px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .hero-title {
+    padding-bottom: 50px;
+    padding-left: 75px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 4.25em;
+  }
+}
