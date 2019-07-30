@@ -22,6 +22,7 @@ font-family: 'Roboto', sans-serif;
   padding-bottom: 50px;
   padding-left: 50px;
   font-family: 'Red Hat Display', sans-serif;
+  font-size: 3.25em;
 }
 
 #rotate {
@@ -189,7 +190,7 @@ footer > .ul-start > .list-group > .foot-a > .list-group-item {
   /* Hero Text Padding */
  .hero-title {
     padding: 30px;
-    font-size: 4em;
+    font-size: 3.75em;
   }
   
   .hero-text-spacer {
@@ -238,6 +239,18 @@ footer > .ul-start > .list-group > .foot-a > .list-group-item {
     height: auto;
     margin: auto;
     display: block;
+  }
+
+  .hero-title {
+    padding-bottom: 50px;
+    padding-left: 50px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1.5em;
+  }
+
+  .hero-title {
+    padding: 0;
+    padding-left: 15px;
   }
 
   .hero-text-spacer {
