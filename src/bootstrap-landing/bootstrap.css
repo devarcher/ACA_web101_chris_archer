@@ -195,6 +195,7 @@ footer > .ul-start > .list-group > .foot-a > .list-group-item {
 }
 
 /* > Large Phone to Tablet */
+/* Hero Image */
 @media (max-width: 1024px) {
   .img-fluid {
     max-width: 60%;
@@ -213,29 +214,35 @@ footer > .ul-start > .list-group > .foot-a > .list-group-item {
     padding: 20px;
   }
 
+  /* Gloabl Spacer */
   .spacer {
     margin: 30px auto;
   }
 
+  /*Heather Help Font Styling */
   .heather-help {
     font-size: 2.5em;
   }
 
+  /* Increase size of wrapper for Here to help section */
   .wrapper {
     width: 100% !important;
   }
 
+  /* Increase Title Box size for tablet */
   .title-box {
     width: 75% !important;
     padding-bottom: 40px
   }
 
+  /* Increase card deck size to eliminate poor wrapping */
   .icon-deck {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-gap: .5rem;
   }
 
+  /* Increase width to fill out screen on tablet / mobile of Call to Action */
   .cta-section {
     width: 100% !important;
   }
@@ -247,6 +254,7 @@ footer > .ul-start > .list-group > .foot-a > .list-group-item {
     display: block;
   }
 
+  /* Footer Cards width increase to fill out on screen */
   footer > .ul-start > .list-group > .foot-a {
    width: 200px;
   }
@@ -254,6 +262,7 @@ footer > .ul-start > .list-group > .foot-a > .list-group-item {
 
 /* Large Phone and smaller */
 @media (max-width: 568px) {
+  /* Hero Image Size */
   .img-fluid {
     max-width: 60%;
     height: auto;
@@ -273,6 +282,7 @@ footer > .ul-start > .list-group > .foot-a > .list-group-item {
     padding-left: 15px;
   }
 
+  /* Heather Help section */
   .heather-help {
     font-size: 2.5em;
   }
@@ -281,22 +291,22 @@ footer > .ul-start > .list-group > .foot-a > .list-group-item {
     padding: 10px;
   }
 
-  .card-grad > * {
-    font-size: 1em;
-  }
-
+  /* Space between sections for mobile */
   .spacer {
     margin: 30px auto;
   }
 
+  /* Increase width of Heather is here to help! */
   .title-box {
     width: 100% !important;
   }
 
+  /* Remove grid setting from icon deck for page formatting */
   .icon-deck {
     display: unset;
   }
 
+  /* Increase call to action area width to fill screen */
   .cta-section {
     width: 100% !important;
   }
@@ -308,23 +318,15 @@ footer > .ul-start > .list-group > .foot-a > .list-group-item {
     display: block;
   }
 
+  /* Increase row size to fill screen */
   footer > .row {
     width: 100% !important;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: .5rem;
   }
 
-  footer > .row {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    margin-top: 20px;
-  }
-
+  /* List Items styling */
   footer > .row > .list-group > ul {
     padding: 0;
   }
@@ -334,9 +336,15 @@ footer > .ul-start > .list-group > .foot-a > .list-group-item {
   }
 
   footer > .ul-start > .list-group > .foot-a {
-    width: 250px;
+    width: 300px;
   }
 
+  /* Video button sizing */
+  .video-btn {
+    width: 300px;
+  }
+
+  /* Footer Font Awesome Icons Styling */
   .icons a {
     font-size: .85em !important;
     padding: 5px;
