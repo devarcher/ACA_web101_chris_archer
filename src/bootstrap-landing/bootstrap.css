@@ -1,6 +1,16 @@
 /* Navigation bottom border */
 .border-4 {
-    border-width: 4px !important;
+  border-width: 4px !important;
+}
+
+/* Hero Text Padding */
+ .hero-title {
+    padding: 50px;
+  }
+
+#rotate {
+  color: #0ECFB7;
+  width: 15vw;
 }
 
 /* Hero Image Sizing */
@@ -13,18 +23,12 @@
 
 /* Hero Image overlay and text */
  .card-grad {
-  padding: 10px;
-  margin: 20 auto;
   border-radius: 5px;
   background: rgba(128,128,128,.075);
   display: flex;
   flex-direction: column;
   align-items: end;
   justify-content: flex-end;
-}
-
-.hero-text-spacer {
-  padding: 50px;
 }
 
 /* Space between secitions */
@@ -128,6 +132,12 @@ footer > .ul-start > .list-group > .foot-a > .list-group-item {
     display: block;
   }
 
+  /* Hero Text Padding */
+ .hero-title {
+    padding: 30px;
+    font-size: 4em;
+  }
+  
   .hero-text-spacer {
     padding: 20px;
   }
