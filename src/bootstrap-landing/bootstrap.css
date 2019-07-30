@@ -376,6 +376,7 @@ footer > .ul-start > .list-group > .foot-a > .list-group-item {
   }
 }
 
+/* Large Screen MQ */
 @media (min-width: 1600px) {
   .hero-title {
     padding-bottom: 50px;
