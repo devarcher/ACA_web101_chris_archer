@@ -11,10 +11,10 @@ font-family: 'Roboto', sans-serif;
 .navbar-brand {
   font-family: 'Red Hat Display', sans-serif;
   background: -webkit-linear-gradient(45deg, #5bc0de, #0ECFB7 80%);
-  background-clip: text;
+  background-clip: text !important;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 2em;
+  font-size: 1.75em;
 }
 
 /* Hero Text Padding */
@@ -67,8 +67,16 @@ font-family: 'Roboto', sans-serif;
   font-family: 'Red Hat Display', sans-serif;
 }
 
-h3, .h3 {
-  background: -webkit-linear-gradient(45deg, #5bc0de, #0ECFB7 0%);
+h3 {
+  background: -webkit-linear-gradient(45deg, #5bc0de, #0ECFB7 80%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+.h3 {
+  background: -webkit-linear-gradient(45deg, #5bc0de, #0ECFB7 80%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -81,6 +89,11 @@ h5 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: 'Red Hat Display', sans-serif;
+}
+
+.navbar-nav {
+  margin-top: 3px;
+  margin-left: 20px;
 }
 
 /* Card Styling */
