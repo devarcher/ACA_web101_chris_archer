@@ -4,9 +4,10 @@
 }
 
 /* Hero Text Padding */
- .hero-title {
-    padding: 50px;
-  }
+.hero-title {
+  padding-left: 300px;
+  padding-bottom: 50px;
+}
 
 #rotate {
   color: #0ECFB7;
