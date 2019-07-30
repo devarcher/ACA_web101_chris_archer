@@ -3,11 +3,17 @@ font-family: 'Red Hat Display', sans-serif;
 font-family: 'Roboto', sans-serif;
 */
 
-/* Navigation bottom border */
-.border-4 {
-  border-width: 4px !important;
+/* Global */
+/* Space between secitions */
+.spacer {
+  margin: 80px auto;
 }
 
+
+/* Desktop Site */
+
+/* Navigation */
+/* Heather Clever Brand Styling */
 .navbar-brand {
   font-family: 'Red Hat Display', sans-serif;
   background: -webkit-linear-gradient(45deg, #5bc0de, #0ECFB7 80%);
@@ -17,20 +23,18 @@ font-family: 'Roboto', sans-serif;
   font-size: 1.75em;
 }
 
-/* Hero Text Padding */
-.hero-title {
-  padding-bottom: 50px;
-  padding-left: 50px;
-  font-family: 'Red Hat Display', sans-serif;
-  font-size: 3.25em;
+/* Link Text Centering */
+.navbar-nav {
+  margin-top: 3px;
+  margin-left: 20px;
 }
 
-#rotate {
-  color: #0ECFB7;
-  width: 15vw;
-  font-family: 'Red Hat Display', sans-serif;
+/* Navigation bottom border */
+.border-4 {
+  border-width: 4px !important;
 }
 
+/* Showcase Area */
 /* Hero Image Sizing */
 .img-fluid {
   max-width: 25%;
@@ -49,39 +53,43 @@ font-family: 'Roboto', sans-serif;
   justify-content: flex-end;
 }
 
-/* Space between secitions */
-.spacer {
-  margin: 80px auto;
+/* Hero Text Padding */
+.hero-title {
+  padding-bottom: 50px;
+  padding-left: 50px;
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 3.25em;
 }
 
-/* Breating Room for "Here to Help section */
+/* Hero Text Rotating Word */
+#rotate {
+  color: #0ECFB7;
+  width: 15vw;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+/* Here to Help Section */
+/* Breating Room for "Here to Help" section */
 .title-box {
   padding: 10px;
   padding-bottom: 85px;
 }
 
+/* Heather Help Text Styling */
 .heather-help {
   background: -webkit-linear-gradient(45deg, #5bc0de, #0ECFB7 80%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: 'Red Hat Display', sans-serif;
+  font-size: 2.75em;
 }
 
-h3 {
-  background: -webkit-linear-gradient(45deg, #5bc0de, #0ECFB7 80%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: 'Red Hat Display', sans-serif;
-}
-
-.h3 {
-  background: -webkit-linear-gradient(45deg, #5bc0de, #0ECFB7 80%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: 'Red Hat Display', sans-serif;
+/* Training Options Section  */
+/* Card Styling */
+.card:hover {
+  box-shadow: -10px 10px 20px rgba(128,128,128,.2);
+  background: rgba(189, 213, 241, 0.075);
 }
 
 h5 {
@@ -92,27 +100,26 @@ h5 {
   font-family: 'Red Hat Display', sans-serif;
 }
 
-.navbar-nav {
-  margin-top: 3px;
-  margin-left: 20px;
-}
-
-/* Card Styling */
-.card:hover {
-  box-shadow: -10px 10px 20px rgba(128,128,128,.2);
-  background: rgba(189, 213, 241, 0.075);
-}
-
 /* Remove Box Shadow from Hero Image (on a card) */
 .hero:hover {
   box-shadow: none;
 }
 
-/* General Padding */
+/* Blockquote Padding */
 .blockquote {
   padding: 30px;
 }
 
+/* Title Styling  */
+h3 {
+  background: -webkit-linear-gradient(45deg, #5bc0de, #0ECFB7 80%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+/* Misc Info Section */
 /* Fontawesome Icons */
 .fas {
   font-size: 3em;
@@ -135,7 +142,6 @@ h5 {
 }
 
 /* Footer styling */
-
 /* Footer Top Spacing */
 .section {
   padding-top: 40px !important;
@@ -146,19 +152,29 @@ h5 {
   color: darkcyan;
 }
 
-.foot-a a {
- text-decoration: none;
- color: grey;
- font-size: 1rem;
-}
-
 /* UL Group styling */
+/* List Width */
 footer > .ul-start > .list-group > .foot-a {
   width: 250px;
 }
 
 footer > .ul-start > .list-group > .foot-a > .list-group-item {
   padding: 8px;
+}
+
+ /* Title Styling  */
+.h3 {
+  background: -webkit-linear-gradient(45deg, #5bc0de, #0ECFB7 80%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+ .foot-a a {
+  text-decoration: none;
+  color: grey;
+  font-size: 1rem;
 }
 
 .video-card {
@@ -199,6 +215,10 @@ footer > .ul-start > .list-group > .foot-a > .list-group-item {
 
   .spacer {
     margin: 30px auto;
+  }
+
+  .heather-help {
+    font-size: 2.5em;
   }
 
   .wrapper {
@@ -251,6 +271,10 @@ footer > .ul-start > .list-group > .foot-a > .list-group-item {
   .hero-title {
     padding: 0;
     padding-left: 15px;
+  }
+
+  .heather-help {
+    font-size: 2.5em;
   }
 
   .hero-text-spacer {
