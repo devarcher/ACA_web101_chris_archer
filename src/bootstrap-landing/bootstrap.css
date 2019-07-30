@@ -185,6 +185,16 @@ footer > .ul-start > .list-group > .foot-a > .list-group-item {
   margin-top: 15px;
 }
 
+/* Email Input Sizing */
+.email {
+  width: 225px;
+}
+
+/* Video button sizing */
+.video-btn {
+  width: 225px;
+}
+
 .video-box {
   margin-bottom: 30px;
 }
@@ -252,6 +262,16 @@ footer > .ul-start > .list-group > .foot-a > .list-group-item {
     height: auto;
     margin: auto;
     display: block;
+  }
+
+    /* Email Input Sizing */
+  .email {
+    width: 225px;
+  }
+
+  /* Video button sizing */
+  .video-btn {
+    width: 225px;
   }
 
   /* Footer Cards width increase to fill out on screen */
@@ -339,9 +359,14 @@ footer > .ul-start > .list-group > .foot-a > .list-group-item {
     width: 300px;
   }
 
+  /* Email Input Sizing */
+  .email {
+    width: 225px;
+  }
+
   /* Video button sizing */
   .video-btn {
-    width: 300px;
+    width: 225px;
   }
 
   /* Footer Font Awesome Icons Styling */
