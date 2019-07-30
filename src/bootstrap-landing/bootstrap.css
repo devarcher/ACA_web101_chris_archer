@@ -1,17 +1,33 @@
+/* Fonts
+font-family: 'Red Hat Display', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
 /* Navigation bottom border */
 .border-4 {
   border-width: 4px !important;
 }
 
+.navbar-brand {
+  font-family: 'Red Hat Display', sans-serif;
+  background: -webkit-linear-gradient(45deg, #5bc0de, #0ECFB7 80%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2em;
+}
+
 /* Hero Text Padding */
 .hero-title {
-  padding-left: 300px;
   padding-bottom: 50px;
+  padding-left: 50px;
+  font-family: 'Red Hat Display', sans-serif;
 }
 
 #rotate {
   color: #0ECFB7;
   width: 15vw;
+  font-family: 'Red Hat Display', sans-serif;
 }
 
 /* Hero Image Sizing */
@@ -43,9 +59,33 @@
   padding-bottom: 85px;
 }
 
+.heather-help {
+  background: -webkit-linear-gradient(45deg, #5bc0de, #0ECFB7 80%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+h3, .h3 {
+  background: -webkit-linear-gradient(45deg, #5bc0de, #0ECFB7 0%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+h5 {
+  background: -webkit-linear-gradient(45deg, #5bc0de, #0ECFB7 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
 /* Card Styling */
 .card:hover {
-  box-shadow: -10px 10px 20px rgba(0,0,0,.2);
+  box-shadow: -10px 10px 20px rgba(128,128,128,.2);
   background: rgba(189, 213, 241, 0.075);
 }
 
