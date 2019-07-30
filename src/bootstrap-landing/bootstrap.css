@@ -350,3 +350,12 @@ footer > .ul-start > .list-group > .foot-a > .list-group-item {
     padding: 5px;
   }
 }
+
+@media (min-width: 1600px) {
+  .hero-title {
+    padding-bottom: 50px;
+    padding-left: 75px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 4.25em;
+  }
+}
