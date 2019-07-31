@@ -44,7 +44,7 @@ font-family: 'Roboto', sans-serif;
 }
 
 /* Hero Image overlay and text */
- .card-grad {
+.card-grad {
   border-radius: 5px;
   background: rgba(128,128,128,.075);
   display: flex;
@@ -171,7 +171,7 @@ footer > .ul-start > .list-group > .foot-a > .list-group-item {
   font-family: 'Red Hat Display', sans-serif;
 }
 
- .foot-a a {
+.foot-a a {
   text-decoration: none;
   color: grey;
   font-size: 1rem;
@@ -215,7 +215,7 @@ footer > .ul-start > .list-group > .foot-a > .list-group-item {
   }
 
   /* Hero Text Padding */
- .hero-title {
+.hero-title {
     padding: 30px;
     font-size: 3.75em;
   }
@@ -276,7 +276,7 @@ footer > .ul-start > .list-group > .foot-a > .list-group-item {
 
   /* Footer Cards width increase to fill out on screen */
   footer > .ul-start > .list-group > .foot-a {
-   width: 200px;
+    width: 200px;
   }
 }
 

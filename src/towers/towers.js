@@ -5,21 +5,21 @@ $('document').ready(function(){
     revert:true
   });
 
-  $('.towerBox').droppable({
+  $('.towerBoxLeft').droppable({
     accept: '.disc',
     drop: function(event, ui) {
       $(this).prepend($(ui.draggable));
     }
   })
 
-  $('.towerBox').droppable({
+  $('.towerBoxMiddle').droppable({
     accept: '.disc',
     drop: function(event, ui) {
       $(this).prepend($(ui.draggable));
     }
   })
 
-  $('.towerBox').droppable({
+  $('.towerBoxRight').droppable({
     accept: '.disc',
     drop: function(event, ui) {
       $(this).prepend($(ui.draggable));
