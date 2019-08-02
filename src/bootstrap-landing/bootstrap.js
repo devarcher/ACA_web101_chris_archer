@@ -27,5 +27,3 @@ function nextItem() {
 
 interval = setInterval(nextItem, 300);
   document.getElementById('rotate').textContent = arr[i];
-
- 
