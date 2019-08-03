@@ -1,0 +1,41 @@
+$primary: rgb(134, 134, 134);
+
+@mixin flexCenter($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: ($direction);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.box {
+  @include flexCenter(column);
+  margin: 25px auto;
+  width: 20vw;
+  height: 15vh;
+  border: 1px solid red;
+
+    
+  p {
+    padding: 5px 25px 5px 25px;
+    background: $primary;
+    border: 1px solid blue;
+    color: green;
+    transition: .25s;
+    &:hover {
+      cursor: pointer;
+      color: red;
+      transform: scale(1.2);
+    }
+  }
+}
